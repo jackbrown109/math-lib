@@ -1,0 +1,163 @@
+﻿  Vector3.cpp
+  Vector2.cpp
+n:\mathlib\source\vector2.cpp(51): error C2677: binary '*': no global operator found which takes type 'Vector2' (or there is no acceptable conversion)
+n:\mathlib\source\vector2.cpp(51): error C2088: '*': illegal for class
+n:\mathlib\source\vector2.cpp(75): error C2677: binary '*': no global operator found which takes type 'Vector2' (or there is no acceptable conversion)
+n:\mathlib\source\vector2.cpp(75): error C2088: '*': illegal for class
+n:\mathlib\source\vector2.cpp(83): error C2676: binary '-': 'Vector2' does not define this operator or a conversion to a type acceptable to the predefined operator
+n:\mathlib\source\vector2.cpp(84): error C2676: binary '-': 'Vector2' does not define this operator or a conversion to a type acceptable to the predefined operator
+n:\mathlib\source\vector2.cpp(94): error C2677: binary '*': no global operator found which takes type 'Vector2' (or there is no acceptable conversion)
+n:\mathlib\source\vector2.cpp(94): error C2088: '*': illegal for class
+  Matrix4.cpp
+  Matrix3.cpp
+n:\mathlib\include\matrix3.h(9): error C2079: 'CMatrix3' uses undefined class 'ML_API'
+n:\mathlib\include\matrix3.h(10): error C2059: syntax error: 'public'
+n:\mathlib\include\matrix3.h(15): error C2332: 'union': missing tag name
+n:\mathlib\include\matrix3.h(15): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\include\matrix3.h(15): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\include\matrix3.h(27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(27): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(27): error C2146: syntax error: missing ';' before identifier 'ONE'
+n:\mathlib\include\matrix3.h(28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(28): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(28): error C2146: syntax error: missing ';' before identifier 'ZERO'
+n:\mathlib\include\matrix3.h(29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(29): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(29): error C2146: syntax error: missing ';' before identifier 'IDENTITY'
+n:\mathlib\include\matrix3.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(33): error C2365: 'CMatrix3': redefinition; previous definition was 'data variable'
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(34): error C2365: 'CMatrix3': redefinition; previous definition was 'data variable'
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(37): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(37): error C2365: 'CMatrix3': redefinition; previous definition was 'data variable'
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(38): error C2065: 'a_m3': undeclared identifier
+n:\mathlib\include\matrix3.h(38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(38): error C2374: 'CMatrix3': redefinition; multiple initialization
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(42): error C2801: 'operator float *' must be a non-static member
+n:\mathlib\include\matrix3.h(43): error C2270: 'operator const float *': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(43): error C2801: 'operator const float *' must be a non-static member
+n:\mathlib\include\matrix3.h(47): error C2801: 'operator ()' must be a non-static member
+n:\mathlib\include\matrix3.h(48): error C2270: '()': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(48): error C2556: 'float operator ()(int,int)': overloaded function differs only by return type from 'float &operator ()(int,int)'
+  n:\mathlib\include\matrix3.h(47): note: see declaration of 'operator ()'
+n:\mathlib\include\matrix3.h(52): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(52): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(53): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(53): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(54): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(54): error C2146: syntax error: missing ';' before identifier 'GetCol'
+n:\mathlib\include\matrix3.h(55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(55): error C2086: 'int CVector3': redefinition
+  n:\mathlib\include\matrix3.h(54): note: see declaration of 'CVector3'
+n:\mathlib\include\matrix3.h(55): error C2146: syntax error: missing ';' before identifier 'GetRow'
+n:\mathlib\include\matrix3.h(56): error C2061: syntax error: identifier 'CVector3'
+n:\mathlib\include\matrix3.h(56): error C2270: 'GetCol': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(57): error C2061: syntax error: identifier 'CVector3'
+n:\mathlib\include\matrix3.h(57): error C2270: 'GetRow': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(61): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(61): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(61): error C2270: '==': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(61): error C2803: 'operator ==' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(61): error C2805: binary 'operator ==' has too few parameters
+n:\mathlib\include\matrix3.h(62): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(62): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(62): error C2270: '!=': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(62): error C2803: 'operator !=' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(62): error C2805: binary 'operator !=' has too few parameters
+n:\mathlib\include\matrix3.h(66): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(66): error C2143: syntax error: missing ';' before '-'
+n:\mathlib\include\matrix3.h(66): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(66): error C2270: '-': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(66): error C2809: 'operator -' has no formal parameters
+n:\mathlib\include\matrix3.h(70): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(70): error C2143: syntax error: missing ';' before '+'
+n:\mathlib\include\matrix3.h(70): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(70): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(70): error C2270: '+': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(70): error C2803: 'operator +' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(71): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(71): error C2143: syntax error: missing ';' before '+='
+n:\mathlib\include\matrix3.h(71): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(71): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(71): error C2803: 'operator +=' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(71): error C2805: binary 'operator +=' has too few parameters
+n:\mathlib\include\matrix3.h(75): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(75): error C2143: syntax error: missing ';' before '-'
+n:\mathlib\include\matrix3.h(75): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(75): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(75): error C2270: '-': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(75): error C2803: 'operator -' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(76): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(76): error C2143: syntax error: missing ';' before '-='
+n:\mathlib\include\matrix3.h(76): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(76): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(76): error C2803: 'operator -=' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(76): error C2805: binary 'operator -=' has too few parameters
+n:\mathlib\include\matrix3.h(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(80): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(80): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(80): error C2270: '*': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(80): error C2803: 'operator *' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(81): error C2255: 'friend': not allowed outside of a class definition
+n:\mathlib\include\matrix3.h(81): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(81): error C2079: 'CMatrix3' uses undefined class 'ML_API'
+n:\mathlib\include\matrix3.h(81): error C2086: 'int CMatrix3': redefinition
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(81): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(81): error C2803: 'operator *' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(82): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\include\matrix3.h(82): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(82): error C2803: 'operator *=' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(82): error C2805: binary 'operator *=' has too few parameters
+n:\mathlib\include\matrix3.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(83): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(83): error C2373: 'CVector3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(54): note: see declaration of 'CVector3'
+n:\mathlib\include\matrix3.h(83): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(83): error C2270: '*': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(83): error C2803: 'operator *' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(84): error C2255: 'friend': not allowed outside of a class definition
+n:\mathlib\include\matrix3.h(84): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(84): error C2079: 'CVector3' uses undefined class 'ML_API'
+n:\mathlib\include\matrix3.h(84): error C2086: 'int CVector3': redefinition
+  n:\mathlib\include\matrix3.h(54): note: see declaration of 'CVector3'
+n:\mathlib\include\matrix3.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(84): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(86): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(86): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(86): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(86): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(86): error C2270: '*': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(87): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(87): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\include\matrix3.h(87): error C2373: 'CMatrix3': redefinition; different type modifiers
+  n:\mathlib\include\matrix3.h(9): note: see declaration of 'CMatrix3'
+n:\mathlib\include\matrix3.h(87): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(87): error C2803: 'operator *=' must have at least one formal parameter of class type
+n:\mathlib\include\matrix3.h(87): error C2805: binary 'operator *=' has too few parameters
+n:\mathlib\include\matrix3.h(92): error C2065: 'a_m3': undeclared identifier
+n:\mathlib\include\matrix3.h(92): error C2182: 'GetTranspose': illegal use of type 'void'
+n:\mathlib\include\matrix3.h(92): error C2143: syntax error: missing ';' before 'const'
+n:\mathlib\include\matrix3.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(92): warning C4091: ' ': ignored on left of 'const int' when no variable is declared
+n:\mathlib\include\matrix3.h(96): error C2270: 'Determinant': modifiers not allowed on nonmember functions
+n:\mathlib\include\matrix3.h(98): error C2065: 'a_m3': undeclared identifier
+n:\mathlib\include\matrix3.h(98): fatal error C1003: error count exceeds 100; stopping compilation
+  Generating Code...
