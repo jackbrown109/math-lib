@@ -1,4 +1,3 @@
-#include "mathLib.h"
 #include "Vector2.h"
 
 #pragma once
@@ -9,7 +8,7 @@
 // Class that implements a 3-dimensional float vector
 
 
-class ML_API CVector3
+class Vector3
 {
 public:
 
@@ -32,24 +31,24 @@ public:
 	//\===================================================
 	//\ Constant Vectors
 	//\===================================================
-	static const CVector3 ONE;
-	static const CVector3 ZERO;
-	static const CVector3 AXIS_X;
-	static const CVector3 AXIS_Y;
-	static const CVector3 AXIS_Z;
+	static const Vector3 ONE;
+	static const Vector3 ZERO;
+	static const Vector3 AXIS_X;
+	static const Vector3 AXIS_Y;
+	static const Vector3 AXIS_Z;
 	//\===================================================
 	//\ Constructors
 	//\===================================================
-	CVector3();
-	CVector3(const CVector3& a_v3);
-	CVector3(const float a_fVal);
-	CVector3(float a_x, float a_y, float a_z);
-	CVector3(const CVector2& a_xy, float a_z = 1.f);
-	explicit CVector3(const float* a_v3fp);
+	Vector3();
+	Vector3(const Vector3& a_v3);
+	Vector3(const float a_fVal);
+	Vector3(float a_x, float a_y, float a_z);
+	Vector3(const Vector2& a_xy, float a_z = 1.f);
+	explicit Vector3(const float* a_v3fp);
 	//\===================================================
 	//\ Destructor
 	//\===================================================
-	CVector3() {};
+	~Vector3();
 	//\===================================================
 	//\ Casting Operators
 	//\===================================================
@@ -63,41 +62,41 @@ public:
 	//\===================================================
 	//\ Equivalence Operators
 	//\===================================================
-	bool				operator ==		(const CVector3& a_v3) const;
-	bool				operator !=		(const CVector3& a_v3) const;
+	bool				operator ==		(const Vector3& a_v3) const;
+	bool				operator !=		(const Vector3& a_v3) const;
 	//\===================================================
 	//\ Neg Operator
 	//\===================================================
-	const CVector3		operator -		() const;
+	const Vector3		operator -		() const;
 	//\===================================================
 	//\ Overload Operators for Vector2 Addition
 	//\===================================================
-	const CVector3		operator +		(float a_fScalar) const;
-	const CVector3		operator +		(const CVector3& a_v3) const;
-	const CVector3&		operator +=		(float a_fScalar);
-	const CVector3&		operator +=		(const CVector3& a_v3);
+	const Vector3		operator +		(float a_fScalar) const;
+	const Vector3		operator +		(const Vector3& a_v3) const;
+	const Vector3&		operator +=		(float a_fScalar);
+	const Vector3&		operator +=		(const Vector3& a_v3);
 	//\===================================================
 	//\ Overload Operators for Vector2 Subtraction
 	//\===================================================
-	const CVector3		operator -		(float a_fScalar) const;
-	const CVector3		operator -		(const CVector3& a_v3) const;
-	const CVector3&		operator -=		(float a_fScalar);
-	const CVector3&		operator -=		(const CVector3& a_v3);
+	const Vector3		operator -		(float a_fScalar) const;
+	const Vector3		operator -		(const Vector3& a_v3) const;
+	const Vector3&		operator -=		(float a_fScalar);
+	const Vector3&		operator -=		(const Vector3& a_v3);
 	//\===================================================
 	//\ Overload Operators for Vector2 Multiplication
 	//\===================================================
-	const CVector3		operator *		(float a_fScalar) const;
-	const CVector3		operator *		(const CVector3& a_v3) const;
-	friend ML_API const CVector3 operator *		(float a_fScalar, const CVector3& a_v3);
-	const CVector3&		operator *=		(float a_fScalar);
-	const CVector3&		operator *=		(const CVector3& a_v3);
+	const Vector3		operator *		(float a_fScalar) const;
+	const Vector3		operator *		(const Vector3& a_v3) const;
+	friend const Vector3 operator *		(float a_fScalar, const Vector3& a_v3);
+	const Vector3&		operator *=		(float a_fScalar);
+	const Vector3&		operator *=		(const Vector3& a_v3);
 	//\===================================================
 	//\ Overload Operators for Vector2 Division
 	//\===================================================
-	const CVector3		operator /		(float a_fScalar) const;
-	const CVector3		operator /		(const CVector3& a_v3) const;
-	const CVector3&		operator /=		(float a_fScalar);
-	const CVector3&		operator /=		(const CVector3& a_v3);
+	const Vector3		operator /		(float a_fScalar) const;
+	const Vector3		operator /		(const Vector3& a_v3) const;
+	const Vector3&		operator /=		(float a_fScalar);
+	const Vector3&		operator /=		(const Vector3& a_v3);
 	//\===================================================
 	//\ Magnitude
 	//\===================================================
@@ -113,24 +112,24 @@ public:
 	//\===================================================
 	//\ Distance
 	//\===================================================
-	friend ML_API float		Distance(const CVector3& a_v3A, const CVector3& a_v3B);
-	friend ML_API float		DistanceSquared(const CVector3& a_v3A, const CVector3& a_v3B);
+	friend float		Distance(const Vector3& a_v3A, const Vector3& a_v3B);
+	friend float		DistanceSquared(const Vector3& a_v3A, const Vector3& a_v3B);
 	//\===================================================
 	//\ Dot Product
 	//\===================================================
-	float				Dot(const CVector3& a_v3A, const CVector3& a_v3B);
-	friend ML_API float		Dot(const CVector3& a_v3A, const CVector3& a_v3B);
+	float				Dot(const Vector3& a_v3A, const Vector3& a_v3B);
+	friend float		Dot(const Vector3& a_v3A, const Vector3& a_v3B);
 	//\===================================================
 	//\ Normalisation
 	//\===================================================
 	bool				IsUnit() const;
 	float				Normalise();
-	const CVector3		GetUnit() const;
+	const Vector3		GetUnit() const;
 	//\===================================================
 	//\ Cross Product
 	//\===================================================
-	const CVector3		Cross(const CVector3& a_v3) const;
-	friend ML_API const CVector3	Cross(const CVector3& a_v3A, const CVector3& a_v3B);
+	const Vector3		Cross(const Vector3& a_v3) const;
+	friend const Vector3	Cross(const Vector3& a_v3A, const Vector3& a_v3B);
 	//\===================================================
 	//\ Rotation Functions
 	//\===================================================

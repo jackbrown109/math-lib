@@ -2,29 +2,100 @@
 
 // Inverse- Get the inverse of the matrix
 
+
+//\===================================================
+//\ Constructors
+//\===================================================
 Matrix3::Matrix3()
 {
 	x = 0.f;
 	y = 0.f;
+	z = 0.f;
 }
 
-Matrix3::Matrix3(float a_x, float a_y, float a_z)
+Matrix3::Matrix3(const float* mat)
 {
-	x = a_x;
-	y = a_y;
+	x = mat[0];
+	y = mat[1];
+	z = mat[2];
 }
 
-Matrix3::Matrix3(const Matrix3& a_m3)
+Matrix3::Matrix3(float m_11, float m_12, float m_13, float m_21, float m_22, float m_23, float m_31, float m_32, float m_33)
+{
+
+}
+Matrix3::Matrix3(Matrix3& a_m3)
 {
 	x = a_m3.x;
 	y = a_m3.y;
+	z = a_m3.z;
 }
-
+//\===================================================
+//\ Destructor
+//\===================================================
 Matrix3::~Matrix3()
 {
 
 }
+//\===================================================
+//\ Casting Operators
+//\===================================================
+Matrix3::operator float*()
+{
 
+}
+Matrix3::operator const float*() const
+{
+
+}
+//\===================================================
+//\ Component Access Operators
+//\===================================================
+float& Matrix3::operator()(int iRow, int iCol)
+{
+
+}
+float Matrix3::operator()(int iRow, int iCol) const
+{
+
+}
+//\===================================================
+//\ Cols and Rows Access
+//\===================================================
+void Matrix3::SetCol(int iCol, const Vector3& vCol)
+{
+
+}
+void Matrix3::SetRow(int iRow, const Vector3& vRow)
+{
+
+}
+
+void Matrix3::GetCol(int iCol, Vector3& vCol) const
+{
+
+}
+void Matrix3::GetRow(int iRow, Vector3& vRow) const
+{
+
+}
+
+//\===================================================
+//\ Transpose Matrix- Transform from Row to Column
+//\===================================================
+void Matrix3::Transpose()
+{
+
+}
+
+void Matrix3::GetTranspose(Matrix3 &a_m3) const
+{
+
+}
+
+//\===================================================
+//\ Inverse- Get Inverse of the Matrix
+//\===================================================
 float Matrix3::Determinant() const
 {
 	return (m_11 * (m_22 * m_33 - m_23 * m_32) +
@@ -55,4 +126,61 @@ bool Matrix3::Inverse() const
 		return true;
 	}
 	return false;
+}
+
+bool Matrix3::GetInverse(Matrix3 &a_m3) const
+{
+	{
+
+		return true;
+	}
+	return false;
+}
+//\===================================================
+//\ Rotation Functions
+//\===================================================
+void Matrix3::RotateX(float fAngle)
+{
+
+}
+void Matrix3::RotateY(float fAngle)
+{
+
+}
+void Matrix3::RotateZ(float fAngle)
+{
+
+}
+//\===================================================
+//\ Orthonormalisation Functions
+//\===================================================
+void Matrix3::OrthoNormalise()
+{
+
+}
+void Matrix3::GramSchmidtOrtho()
+{
+
+}
+//\===================================================
+//\ Scale Functionality
+//\===================================================
+void Matrix3::Scale(const Vector3& a_v3)
+{
+
+}
+void Matrix3::Scale(float a_fScalar)
+{
+
+}
+//\===================================================
+//\ General Matrix Functions
+//\===================================================
+void Matrix3::Identity()
+{
+
+}
+void Matrix3::Zero()
+{
+
 }

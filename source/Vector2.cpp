@@ -1,68 +1,179 @@
 
 #include "Vector2.h"
-
-CVector2::Vector2()
+//\===================================================
+//\ Constructors
+//\===================================================
+Vector2::Vector2()
 {
 	x = 0.f;
 	y = 0.f;
 }
 
-CVector2::Vector2(float a_x, float a_y)
+Vector2::Vector2(float a_x, float a_y)
 {
 	x = a_x;
 	y = a_y;
 }
 
-CVector2::Vector2(const CVector2& a_v2)
+Vector2::Vector2(const Vector2& a_v2)
 {
 	x = a_v2.x;
 	y = a_v2.y;
 }
-
-CVector2::~CVector2()
+//\===================================================
+//\ Destructor
+//\===================================================
+Vector2::~Vector2()
 {
 
 }
+//\===================================================
+//\ Equivalence Operators
+//\===================================================
+bool Vector2::operator ==(const Vector2& a_v2) const
+{
+	return (x == a_v2.x && y == a_v2.y);
+}
 
-CVector2 Vector2::operator +(const CVector2& a_v2) const
+bool Vector2::operator !=(const Vector2 a_v2) const
+{
+	return (x != a_v2.x || y != a_v2.y);
+}
+//\===================================================
+//\ Overload Operators for Vector2 Addition
+//\===================================================
+Vector2 Vector2::operator +(float a_fScalar) const
+{
+	return Vector2(x + a_fScalar.x, y + a_fScalar.y);
+}
+Vector2 Vector2::operator +(const Vector2& a_v2) const
 {
 	return Vector2(x + a_v2.x, y + a_v2.y);
 }
-
-CVector2& Vector2::operator +=(const CVector2& a_v2)
+Vector2& Vector2::operator +=(float a_fScalar)
+{
+	x += a_fScalar.x;
+	y += a_fScalar.y;
+	return *this;
+}
+Vector2& Vector2::operator +=(const Vector2& a_v2)
 {
 	x += a_v2.x;
 	y += a_v2.y;
 	return *this;
 }
-
-bool CVector2::operator ==(const CVector2& a_v2) const
+//\===================================================
+//\ Overload Operators for Vector2 Subtraction
+//\===================================================
+Vector2 Vector2::operator -(float a_fScalar) const
 {
-	return (x == a_v2.x && y == a_v2.y);
+	return Vector2(x - a_fScalar.x, y - a_fScalar.y);
+}
+Vector2 Vector2::operator -(const Vector2& a_v2) const
+{
+	return Vector2(x - a_v2.x, y - a_v2.y);
+}
+Vector2& Vector2::operator -=(float a_fScalar)
+{
+	x -= a_fScalar.x;
+	y -= a_fScalar.y;
+	return *this;
+}
+Vector2& Vector2::operator -=(const Vector2& a_v2)
+{
+	x -= a_v2.x;
+	y -= a_v2.y;
+	return *this;
+}
+//\===================================================
+//\ Overload Operators for Vector2 Multiplication
+//\===================================================
+Vector2 Vector2::operator *(float a_fScalar) const
+{
+	return Vector2(x * a_fScalar.x, y * a_fScalar.y);
+}
+Vector2 Vector2::operator *(const Vector2& a_v2) const
+{
+	return Vector2(x * a_v2.x, y * a_v2.y);
 }
 
-bool CVector2::operator !=(const CVector2& a_v2) const
+
+
+
+Vector2& Vector2::operator *=(float a_fScalar)
 {
-	return (x != a_v2.x || y != a_v2.y);
+	x *= a_fScalar.x;
+	y *= a_fScalar.y;
+	return *this;
+}
+Vector2& Vector2::operator *=(const Vector2& a_v2)
+{
+	x *= a_v2.x;
+	y *= a_v2.y;
+	return *this;
 }
 
-CVector2 lerp(CVector2 a_A, CVector2 a_B, float a_t)
+//\===================================================
+//\ Overload Operators for Vector2 Division
+//\===================================================
+Vector2 Vector2::operator /(float a_fScalar) const
+{
+	return Vector2(x / a_fScalar.x, y / a_fScalar.y);
+}
+Vector2 Vector2::operator /(const Vector2& a_v2) const
+{
+	return Vector2(x / a_v2.x, y / a_v2.y);
+}
+Vector2& Vector2::operator /=(float a_fScalar)
+{
+	x /= a_fScalar.x;
+	y /= a_fScalar.y;
+	return *this;
+}
+Vector2& Vector2::operator /=(const Vector2& a_v2)
+{
+	x /= a_v2.x;
+	y /= a_v2.y;
+	return *this;
+}
+//\===================================================
+//\ Magnitude
+//\===================================================
+float Vector2::Length() const
+{
+
+}
+float Vector2::Magnitude() const
+{
+
+}
+float Vector2::LengthSquared() const
+{
+
+}
+float Vector2::MagnitudeSquared() const
+{
+	
+}
+
+
+Vector2 Vector2::Lerp(Vector2 a_A, Vector2 a_B, float a_t)
 {
 	return a_t * a_B + (1 - a_t) * a_A;
 }
 
-CVector2 QuadBezier(CVector2 a_A, CVector2 a_B, CVector2 a_C, float a_t)
+Vector2 QuadBezier(Vector2 a_A, Vector2 a_B, Vector2 a_C, float a_t)
 {
 	//lerp from the first point to the second
-	CVector2 mid1 = lerp(a_A, a_B, a_t);
+	Vector2 mid1 = lerp(a_A, a_B, a_t);
 	//lerp from the second point to the third
-	CVector2 mid2 = lerp(a_B, a_C, a_t);
+	Vector2 mid2 = lerp(a_B, a_C, a_t);
 
 	//return the lerp from the two intermediate points
 	return lerp(mid1, mid2, a_t);
 }
 
-CVector2 HermiteSpline(Vector2 point0, Vector2 point1, Vector2 tangent0, Vector2 tangent1, float t)
+Vector2 HermiteSpline(Vector2 point0, Vector2 point1, Vector2 tangent0, Vector2 tangent1, float t)
 {
 	float tsq = t * t;
 	float tcub = tsq * t;
@@ -78,7 +189,7 @@ CVector2 HermiteSpline(Vector2 point0, Vector2 point1, Vector2 tangent0, Vector2
 
 }
 
-CVector2 CardinalSpline(Vector2 point0, Vector2 point1, Vector2 point2, float a, float t)
+Vector2 CardinalSpline(Vector2 point0, Vector2 point1, Vector2 point2, float a, float t)
 {
 	Vector2 tangent0 = (point1 - point0) * a;
 	Vector2 tangent1 = (point2 - point1) * a;
