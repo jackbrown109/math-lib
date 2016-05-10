@@ -69,21 +69,21 @@ public:
 	//\===================================================
 	const Vector3		operator -		() const;
 	//\===================================================
-	//\ Overload Operators for Vector2 Addition
+	//\ Overload Operators for Vector3 Addition
 	//\===================================================
 	const Vector3		operator +		(float a_fScalar) const;
 	const Vector3		operator +		(const Vector3& a_v3) const;
 	const Vector3&		operator +=		(float a_fScalar);
 	const Vector3&		operator +=		(const Vector3& a_v3);
 	//\===================================================
-	//\ Overload Operators for Vector2 Subtraction
+	//\ Overload Operators for Vector3 Subtraction
 	//\===================================================
 	const Vector3		operator -		(float a_fScalar) const;
 	const Vector3		operator -		(const Vector3& a_v3) const;
 	const Vector3&		operator -=		(float a_fScalar);
 	const Vector3&		operator -=		(const Vector3& a_v3);
 	//\===================================================
-	//\ Overload Operators for Vector2 Multiplication
+	//\ Overload Operators for Vector3 Multiplication
 	//\===================================================
 	const Vector3		operator *		(float a_fScalar) const;
 	const Vector3		operator *		(const Vector3& a_v3) const;
@@ -91,7 +91,7 @@ public:
 	const Vector3&		operator *=		(float a_fScalar);
 	const Vector3&		operator *=		(const Vector3& a_v3);
 	//\===================================================
-	//\ Overload Operators for Vector2 Division
+	//\ Overload Operators for Vector3 Division
 	//\===================================================
 	const Vector3		operator /		(float a_fScalar) const;
 	const Vector3		operator /		(const Vector3& a_v3) const;
