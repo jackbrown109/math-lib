@@ -307,6 +307,7 @@
     <ClCompile Include="..\..\source\Matrix4.cpp" />
     <ClCompile Include="..\..\source\Vector2.cpp" />
     <ClCompile Include="..\..\source\Vector3.cpp" />
+    <ClCompile Include="..\..\source\Vector4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\mathLib.h" />
@@ -314,6 +315,7 @@
     <ClInclude Include="..\..\include\Matrix4.h" />
     <ClInclude Include="..\..\include\Vector2.h" />
     <ClInclude Include="..\..\include\Vector3.h" />
+    <ClInclude Include="..\..\include\Vector4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

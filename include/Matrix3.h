@@ -3,15 +3,16 @@
 #ifndef __MATRIX3_H__
 #define __MATRIX3_H__
 
-#include "mathlib.h"
+
 
 class Matrix3
 {
 public:
+
+	float x; float y; float z;
 	//\===================================================
 	//\ Member Variables held in unnamed union for accessibility
 	//\===================================================
-	float x; float y; float z;
 	union
 	{
 		float m[3][3];
@@ -54,7 +55,7 @@ public:
 	//\===================================================
 	//\ Cols and Rows Access
 	//\===================================================
-	void				SetCol(int iCol, const Vector3& vCol);
+	void				SetCol(int iCol, const Vector3 vCol);
 	void				SetRow(int iRow, const Vector3& vRow);
 	Vector3			GetCol(int iCol) const;
 	Vector3			GetRow(int iRow) const;

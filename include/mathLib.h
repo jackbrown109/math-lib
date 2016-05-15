@@ -12,11 +12,13 @@
 #else
 #define DLLEXPORT 
 #endif
+#include <string>
 #include <math.h>
 #include "Vector2.h"
 #include "Vector3.h"
 #include "Matrix3.h"
 #include "Matrix4.h"
+#include"Vector4.h"
 
 
 // TODO: reference additional headers your program requires here

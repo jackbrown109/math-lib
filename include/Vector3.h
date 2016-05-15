@@ -1,12 +1,12 @@
-#include "Vector2.h"
 
 #pragma once
 
 #ifndef __VECTOR3_H__
 #define __VECTOR3_H__
 
-// Class that implements a 3-dimensional float vector
 
+
+// Class that implements a 3-dimensional float vector
 
 class Vector3
 {

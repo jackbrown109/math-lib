@@ -3,7 +3,7 @@
 #ifndef __VECTOR2_H__
 #define __VECTOR2_H__
 
-#include "mathLib.h"
+
 
 class Vector2
 {
@@ -139,6 +139,9 @@ public:
 	//\===================================================
 	friend Vector2			Lerp(const Vector2& vecA, const Vector2& vecB, float t);
 	friend Vector2			biLerp(const Vector2 vec[4], float fU, float fV);
+	friend Vector2			QuadBezier(Vector2 vecA, Vector2 vecB, Vector2 vecC, float t);
+	friend Vector2			HermiteSpline(Vector2 point0, Vector2 point1, Vector2 tangent0, Vector2 tangent1, float t);
+	friend Vector2			CardinalSpline(Vector2 point0, Vector2 point1, Vector2 point2, float a, float t);
 	//\===================================================
 	//\ Other useful functions
 	//\===================================================

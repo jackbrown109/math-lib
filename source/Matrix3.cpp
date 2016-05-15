@@ -1,6 +1,7 @@
 #include "Matrix3.h"
+#include "Vector3.h"
 
-// Inverse- Get the inverse of the matrix
+
 
 
 //\===================================================
@@ -62,7 +63,7 @@ float Matrix3::operator()(int iRow, int iCol) const
 //\===================================================
 //\ Cols and Rows Access
 //\===================================================
-void Matrix3::SetCol(int iCol, const Vector3& vCol)
+void Matrix3::SetCol(int iCol, const Vector3 vCol)
 {
 
 }
@@ -70,7 +71,14 @@ void Matrix3::SetRow(int iRow, const Vector3& vRow)
 {
 
 }
+Vector3	Matrix3::GetCol(int iCol) const
+{
 
+}
+Vector3 Matrix3::GetRow(int iRow) const
+{
+
+}
 void Matrix3::GetCol(int iCol, Vector3& vCol) const
 {
 
@@ -79,13 +87,84 @@ void Matrix3::GetRow(int iRow, Vector3& vRow) const
 {
 
 }
+//\===================================================
+//\ Equivalence Operators
+//\===================================================
+bool Matrix3::operator == (const Matrix3& a_m3) const
+{
+	return (x == a_m3.x && y == a_m3.y && z == a_m3.z);
+}
+bool Matrix3::operator != (const Matrix3& a_m3) const
+{
+	return (x != a_m3.x || y != a_m3.y || z != a_m3.z);
+}
+//\===================================================
+//\ Negative Operator
+//\===================================================
+const Matrix3 Matrix3::operator - () const
+{
 
+}
+//\===================================================
+//\ Operator Overloads for Addition
+//\===================================================
+const Matrix3 Matrix3::operator + (const Matrix3& a_m3) const
+{
+	return;
+}
+const Matrix3 Matrix3::operator += (const Matrix3& a_m3)
+{
+	return;
+}
+//\===================================================
+//\ Operator Overloads for Subtraction
+//\===================================================
+const Matrix3 Matrix3::operator - (const Matrix3& a_m3) const
+{
+	return;
+}
+const Matrix3 Matrix3::operator -= (const Matrix3& a_m3)
+{
+	return;
+}
+//\===================================================
+//\ Operator Overloads for Multiplication
+//\===================================================
+const Matrix3 Matrix3::operator * (const float a_fScalar) const
+{
+	return;
+}
+const Matrix3 operator * (const float a_fScalar, const Matrix3& a_m3)
+{
+	return;
+}
+const Matrix3& Matrix3::operator *= (const float a_fScalar)
+{
+	return;
+}
+const Vector3 Matrix3::operator * (const Vector3& a_v3) const
+{
+	return;
+}
+const Vector3 operator * (const Vector3& a_v3, const Matrix3& a_m3)
+{
+	return;
+}
+
+const Matrix3 Matrix3::operator * (const Matrix3& a_m3) const
+{
+	return;
+}
+const Matrix3& Matrix3::operator *= (const Matrix3& a_m3)
+{
+	return;
+}
 //\===================================================
 //\ Transpose Matrix- Transform from Row to Column
 //\===================================================
 void Matrix3::Transpose()
 {
-
+	
 }
 
 void Matrix3::GetTranspose(Matrix3 &a_m3) const
@@ -111,17 +190,17 @@ bool Matrix3::Inverse() const
 		const float fInvDet = Recipf(fDeterminant);
 
 		Matrix3 mat = *this;
-		m_11 = (mat.m_22 * mat.m_33 - mat.m_23 * mat.m_32) * fInvDet;
-		m_12 = (mat.m_13 * mat.m_32 - mat.m_12 * mat.m_33) * fInvDet;
-		m_13 = (mat.m_12 * mat.m_23 - mat.m_13 * mat.m_22) * fInvDet;
+		mat.m_11 = (mat.m_22 * mat.m_33 - mat.m_23 * mat.m_32) * fInvDet;
+		mat.m_12 = (mat.m_13 * mat.m_32 - mat.m_12 * mat.m_33) * fInvDet;
+		mat.m_13 = (mat.m_12 * mat.m_23 - mat.m_13 * mat.m_22) * fInvDet;
 
-		m_21 = (mat.m_23 * mat.m_31 - mat.m_21 * mat.m_33) * fInvDet;
-		m_22 = (mat.m_11 * mat.m_33 - mat.m_13 * mat.m_31) * fInvDet;
-		m_23 = (mat.m_13 * mat.m_21 - mat.m_11 * mat.m_23) * fInvDet;
+		mat.m_21 = (mat.m_23 * mat.m_31 - mat.m_21 * mat.m_33) * fInvDet;
+		mat.m_22 = (mat.m_11 * mat.m_33 - mat.m_13 * mat.m_31) * fInvDet;
+		mat.m_23 = (mat.m_13 * mat.m_21 - mat.m_11 * mat.m_23) * fInvDet;
 
-		m_31 = (mat.m_21 * mat.m_32 - mat.m_22 * mat.m_31) * fInvDet;
-		m_32 = (mat.m_12 * mat.m_31 - mat.m_11 * mat.m_32) * fInvDet;
-		m_33 = (mat.m_11 * mat.m_22 - mat.m_12 * mat.m_21) * fInvDet;
+		mat.m_31 = (mat.m_21 * mat.m_32 - mat.m_22 * mat.m_31) * fInvDet;
+		mat.m_32 = (mat.m_12 * mat.m_31 - mat.m_11 * mat.m_32) * fInvDet;
+		mat.m_33 = (mat.m_11 * mat.m_22 - mat.m_12 * mat.m_21) * fInvDet;
 		
 		return true;
 	}
