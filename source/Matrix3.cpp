@@ -1,5 +1,4 @@
-#include "Matrix3.h"
-#include "Vector3.h"
+
 #include "mathLib.h"
 
 
@@ -8,29 +7,36 @@
 //\===================================================
 //\ Constructors
 //\===================================================
-Matrix3::Matrix3()
+Matrix3::Matrix3() : 
+	m_11(1.f),  m_12(0.f),	m_13(0.f),
+	m_21(0.f),	m_22(1.f),	m_23(0.f),
+	m_31(0.f),	m_32(0.f),	m_33(1.f)
+
 {
-	x = 0.f;
-	y = 0.f;
-	z = 0.f;
+	
 }
 
-Matrix3::Matrix3(const float* mat)
+Matrix3::Matrix3(const float* mat) :
+	m_11(mat[0]), m_12(mat[1]), m_13(mat[2]),
+	m_21(mat[3]), m_22(mat[4]), m_23(mat[5]),
+	m_31(mat[6]), m_32(mat[7]), m_33(mat[8])
 {
-	x = mat[0];
-	y = mat[1];
-	z = mat[2];
+	
 }
 
-Matrix3::Matrix3(float m_11, float m_12, float m_13, float m_21, float m_22, float m_23, float m_31, float m_32, float m_33)
+Matrix3::Matrix3(float a_11, float a_12, float a_13, float a_21, float a_22, float a_23, float a_31, float a_32, float a_33) :
+	m_11(a_11), m_12(a_12), m_13(a_13),
+	m_21(a_21), m_22(a_22), m_23(a_23),
+	m_31(a_31), m_32(a_32), m_33(a_33)
+{
+	
+}
+Matrix3::Matrix3(Matrix3& a_m3) :
+	m_11(a_m3.m_11), m_12(a_m3.m_12), m_13(a_m3.m_13),
+	m_21(a_m3.m_21), m_22(a_m3.m_22), m_23(a_m3.m_23),
+	m_31(a_m3.m_31), m_32(a_m3.m_32), m_33(a_m3.m_33)
 {
 
-}
-Matrix3::Matrix3(Matrix3& a_m3)
-{
-	x = a_m3.x;
-	y = a_m3.y;
-	z = a_m3.z;
 }
 //\===================================================
 //\ Destructor
@@ -44,11 +50,11 @@ Matrix3::~Matrix3()
 //\===================================================
 Matrix3::operator float*()
 {
-
+	return static_cast<float*>(&m_11);
 }
 Matrix3::operator const float*() const
 {
-
+	return static_cast<const float*>(&m_11);
 }
 //\===================================================
 //\ Component Access Operators
@@ -108,13 +114,6 @@ bool Matrix3::operator != (const Matrix3& a_m3) const
 			(m_31 != a_m3.m_31) || (m_32 != a_m3.m_32) || (m_33 != a_m3.m_33));
 }
 //\===================================================
-//\ Negative Operator
-//\===================================================
-const Matrix3 Matrix3::operator - () const
-{
-
-}
-//\===================================================
 //\ Operator Overloads for Addition
 //\===================================================
 const Matrix3 Matrix3::operator + (const Matrix3& a_m3) const
@@ -159,15 +158,15 @@ const Matrix3 Matrix3::operator - (const Matrix3& a_m3) const
 }
 const Matrix3 Matrix3::operator -= (const Matrix3& a_m3)
 {
-					m_11 += a_m3.m_11;
-					m_12 += a_m3.m_12;
-					m_13 += a_m3.m_13;
-					m_21 += a_m3.m_21;
-					m_22 += a_m3.m_22;
-					m_23 += a_m3.m_23;
-					m_31 += a_m3.m_31;
-					m_32 += a_m3.m_32;
-					m_33 += a_m3.m_33;
+					m_11 -= a_m3.m_11;
+					m_12 -= a_m3.m_12;
+					m_13 -= a_m3.m_13;
+					m_21 -= a_m3.m_21;
+					m_22 -= a_m3.m_22;
+					m_23 -= a_m3.m_23;
+					m_31 -= a_m3.m_31;
+					m_32 -= a_m3.m_32;
+					m_33 -= a_m3.m_33;
 					return *this;
 }
 //\===================================================
@@ -181,7 +180,7 @@ const Matrix3 Matrix3::operator * (const float a_fScalar) const
 }
 const Matrix3 operator * (const float a_fScalar, const Matrix3& a_m3)
 {
-					
+	return Matrix3(a_m3 * a_fScalar);
 }
 const Matrix3& Matrix3::operator *= (const float a_fScalar)
 {
@@ -204,7 +203,7 @@ const Vector3 Matrix3::operator * (const Vector3& a_v3) const
 }
 const Vector3 operator * (const Vector3& a_v3, const Matrix3& a_m3)
 {
-	return;
+	return Vector3(a_m3 * a_v3);
 }
 
 const Matrix3 Matrix3::operator * (const Matrix3& a_m3) const
@@ -232,23 +231,25 @@ const Matrix3& Matrix3::operator *= (const Matrix3& a_m3)
 		m_31 *= a_m3.m_31;
 		m_32 *= a_m3.m_32;
 		m_33 *= a_m3.m_33;
+		return *this;
 }
 //\===================================================
 //\ Transpose Matrix- Transform from Row to Column
 //\===================================================
 void Matrix3::Transpose()
 {
-	float   h = m_12;
-			m_12 = m_21;
-			m_21 = h;
+	float   k = 0.f;
+	k = m_12;
+	m_12 = m_21;
+	m_21 = k;
 
-	float   k = m_31;
-			m_13 = m_31;
-			m_31 = k;
+    k = m_31;
+    m_13 = m_31;
+	m_31 = k;
 
-	float   f = m_23;
-			m_32 = m_23;
-			m_23 = f;
+   k = m_23;
+	m_32 = m_23;
+	m_23 = k;
 }
 
 void Matrix3::GetTranspose(Matrix3 &a_m3)
@@ -276,7 +277,7 @@ float Matrix3::Determinant() const
 		m_13 * (m_21 * m_32 - m_22 * m_31));
 }
 
-bool Matrix3::Inverse() const
+bool Matrix3::Inverse() 
 {
 	float fDeterminant = Determinant();
 	if (fDeterminant != 0.0f)
@@ -284,17 +285,17 @@ bool Matrix3::Inverse() const
 		const float fInvDet = powf(fDeterminant, -1.f);
 
 		Matrix3 mat = *this;
-		mat.m_11 = (mat.m_22 * mat.m_33 - mat.m_23 * mat.m_32) * fInvDet;
-		mat.m_12 = (mat.m_13 * mat.m_32 - mat.m_12 * mat.m_33) * fInvDet;
-		mat.m_13 = (mat.m_12 * mat.m_23 - mat.m_13 * mat.m_22) * fInvDet;
+		m_11 = (mat.m_22 * mat.m_33 - mat.m_23 * mat.m_32) * fInvDet;
+		m_12 = (mat.m_13 * mat.m_32 - mat.m_12 * mat.m_33) * fInvDet;
+		m_13 = (mat.m_12 * mat.m_23 - mat.m_13 * mat.m_22) * fInvDet;
 
-		mat.m_21 = (mat.m_23 * mat.m_31 - mat.m_21 * mat.m_33) * fInvDet;
-		mat.m_22 = (mat.m_11 * mat.m_33 - mat.m_13 * mat.m_31) * fInvDet;
-		mat.m_23 = (mat.m_13 * mat.m_21 - mat.m_11 * mat.m_23) * fInvDet;
+		m_21 = (mat.m_23 * mat.m_31 - mat.m_21 * mat.m_33) * fInvDet;
+		m_22 = (mat.m_11 * mat.m_33 - mat.m_13 * mat.m_31) * fInvDet;
+		m_23 = (mat.m_13 * mat.m_21 - mat.m_11 * mat.m_23) * fInvDet;
 
-		mat.m_31 = (mat.m_21 * mat.m_32 - mat.m_22 * mat.m_31) * fInvDet;
-		mat.m_32 = (mat.m_12 * mat.m_31 - mat.m_11 * mat.m_32) * fInvDet;
-		mat.m_33 = (mat.m_11 * mat.m_22 - mat.m_12 * mat.m_21) * fInvDet;
+		m_31 = (mat.m_21 * mat.m_32 - mat.m_22 * mat.m_31) * fInvDet;
+		m_32 = (mat.m_12 * mat.m_31 - mat.m_11 * mat.m_32) * fInvDet;
+		m_33 = (mat.m_11 * mat.m_22 - mat.m_12 * mat.m_21) * fInvDet;
 		
 		return true;
 	}
@@ -364,7 +365,6 @@ void Matrix3::Identity()
 }
 void Matrix3::Zero()
 {
-	Matrix3(0.f, 0.f, 0.f,
-		0.f, 0.f, 0.f,
-		0.f, 0.f, 0.f);
+	
+
 }

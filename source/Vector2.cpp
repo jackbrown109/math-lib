@@ -1,28 +1,28 @@
-#include "Vector2.h"
 #include "mathLib.h"
 
 //\===================================================
 //\ Constructors
 //\===================================================
-Vector2::Vector2()
+Vector2::Vector2() :
+	x(0.f), y (0.f)
 {
-	x = 0.f;
-	y = 0.f;
+	
 }
 
-Vector2::Vector2(float a_x, float a_y)
+Vector2::Vector2(float a_x, float a_y) :
+	x(a_x), y(a_y)
 {
-	x = a_x;
-	y = a_y;
+	
 }
 Vector2::Vector2(const float* a_i)
 {
-
+	x = *a_i;
+	y = *a_i;
 }
-Vector2::Vector2(const Vector2& a_v2)
+Vector2::Vector2(const Vector2& a_v2) :
+	x(a_v2.x), y(a_v2.y)
 {
-	x = a_v2.x;
-	y = a_v2.y;
+	
 }
 //\===================================================
 //\ Destructor
@@ -36,11 +36,11 @@ Vector2::~Vector2()
 //\===================================================
 Vector2::operator float*()
 {
-
+	return static_cast<float*>(&i[0]);
 }
 Vector2::operator const float*() const
 {
-
+	return static_cast<const float*>(&i[0]);
 }
 //\===================================================
 //\ Accessor Operators
@@ -134,7 +134,7 @@ const Vector2 Vector2::operator *(const Vector2& a_v2) const
 
 const Vector2 operator*(float a_fScalar, const Vector2 & a_v2)
 {
-	return;
+	return Vector2(a_fScalar * a_v2.x, a_fScalar * a_v2.y);
 }
 
 const Vector2& Vector2::operator *=(float a_fScalar)
@@ -182,8 +182,8 @@ float Vector2::Length() const
 }
 float Vector2::Magnitude() const
 {
-	double m = (x*x) + (y*y);
-	return sqrt(m);
+	float m = (x*x) + (y*y);
+	return sqrtf(m);
 }
 float Vector2::LengthSquared() const
 {
@@ -198,11 +198,13 @@ float Vector2::MagnitudeSquared() const
 //\===================================================
 float Distance(const Vector2& a_v2A, const Vector2& a_v2B)
 {
-
+	Vector2 v2 = a_v2A - a_v2B;
+	return v2.Magnitude();
 }
 float DistanceSquared(const Vector2& a_v2A, const Vector2& a_v2B)
 {
-
+	Vector2 v2 = a_v2A - a_v2B;
+	return v2.MagnitudeSquared();
 }
 //\===================================================
 //\ Dot Product
@@ -220,10 +222,12 @@ float Dot(const Vector2& a_v2A, const Vector2& a_v2B)
 //\===================================================
 bool Vector2::IsUnit()const
 {
+	float m = Magnitude();
+	if (m > 1.5f)
 	{
-		return true;
+		return false;
 	}
-	return false;
+	return true;
 }
 Vector2 Vector2::Normalise()
 {
@@ -234,7 +238,9 @@ Vector2 Vector2::Normalise()
 }
 const Vector2 Vector2::GetUnit() const
 {
-	float m = Magnitude();
+	Vector2 v2(x, y);
+	v2.Normalise();
+	return v2;
 }
 //\===================================================
 //\ Get Perpendicular
@@ -251,12 +257,21 @@ Vector2 Vector2::GetPerpendicular() const
 //\===================================================
 void Vector2::Rotate(float fAngle)
 {
-
+	const float cos = cosf(fAngle);
+	const float sin = sinf(fAngle);
+	float TempX = x*cos - y* sin;
+	float TempY = x*sin + y* cos;
+	x = TempX;
+	y = TempY;
 }
+
+/*
 void Vector2::Project(float fAngle, float fDistance)
 {
 
 }
+*/
+
 //\===================================================
 //\ Linear Interpolation and Bilinear Interpolation
 //\===================================================
@@ -264,20 +279,23 @@ Vector2 Lerp(const Vector2& vecA, const Vector2& vecB, float t)
 {
 	return t * vecB + (1 - t) * vecA;
 }
+
+/*
 Vector2 biLerp(const Vector2 vec[4], float fU, float fV)
 {
 
 }
+*/
 
 Vector2 QuadBezier(Vector2 vecA, Vector2 vecB, Vector2 vecC, float t)
 {
 	//lerp from the first point to the second
-	Vector2 mid1 = lerp(vecA, vecB, t);
+	Vector2 mid1 = Lerp(vecA, vecB, t);
 	//lerp from the second point to the third
-	Vector2 mid2 = lerp(vecB, vecC, t);
+	Vector2 mid2 = Lerp(vecB, vecC, t);
 
 	//return the lerp from the two intermediate points
-	return lerp(mid1, mid2, t);
+	return Lerp(mid1, mid2, t);
 }
 
 Vector2 HermiteSpline(Vector2 point0, Vector2 point1, Vector2 tangent0, Vector2 tangent1, float t)
@@ -317,22 +335,34 @@ Vector2 CardinalSpline(Vector2 point0, Vector2 point1, Vector2 point2, float a, 
 //\===================================================
 void Vector2::Zero()
 {
-
+	x = 0;
+	y = 0;
 }
 void Vector2::One()
 {
-
-}
-float Vector2::Sum() const
-{
-
+	x = 1;
+	y = 1;
 }
 float Vector2::Min() const
 {
-
+	if (x < y)
+	{
+		return x;
+	}
+	else
+	{
+		return y;
+	}
 }
 float Vector2::Max() const
 {
-
+	if (x > y)
+	{
+		return x;
+	}
+	else
+	{
+		return y;
+	}
 }
 

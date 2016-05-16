@@ -6,13 +6,16 @@
 
 #include "mathLib.h"
 
+class Vector4;
+class Matrix3;
+
 class Matrix4
 {
 public:
 	//\=============================================================================
 	//\ Member Variables held in unnamed union for accessibility
 	//\=============================================================================
-	float x; float y; float z; float t;
+	
 	union
 	{
 		struct
@@ -106,10 +109,6 @@ public:
 	bool				operator == (const Matrix4& a_m4) const;
 	bool				operator != (const Matrix4& a_m4) const;
 	//\=============================================================================
-	//\ Neg Operator
-	//\=============================================================================
-	const Matrix4		operator - () const;
-	//\=============================================================================
 	//\ Operator Overloads for Addition
 	//\=============================================================================
 	const Matrix4		operator + (const Matrix4& a_m4) const;
@@ -126,9 +125,6 @@ public:
 	friend const Matrix4 operator * (const float a_fScalar, const Matrix4& a_m4);
 	const Matrix4&		operator *= (const float a_fScalar);
 
-	const Vector3		operator * (const Vector3& a_v3) const;
-	friend const Vector3 operator * (const Vector3& a_v3, const Matrix4& a_m4);
-
 	const Vector4		operator * (const Vector4& a_v4) const;
 	friend const Vector4 operator * (const Vector4& a_v4, const Matrix4& a_m4);
 
@@ -142,8 +138,8 @@ public:
 	//\=============================================================================
 	//\ General Matrix Functions
 	//\=============================================================================
-	void				Scale(const Vector3& vec);
-	void				Scale(float k);
+	void				Scale(const Vector3& a_v3);
+	void				Scale(float a_fScalar);
 	//\=============================================================================
 	//\ Orthonormalise
 	//\=============================================================================
@@ -151,7 +147,6 @@ public:
 	//\=============================================================================
 	//\ Inverse Matrix Functions
 	//\=============================================================================
-	float				Determinant() const;
 	float				Determinant3() const;
 	bool				Inverse();
 	bool				GetInverse(Matrix4 &mat) const;

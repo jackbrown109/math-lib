@@ -5,11 +5,12 @@
 
 #include "mathLib.h"
 
+class Vector3;
+
 class Matrix3
 {
 public:
 
-	float x; float y; float z;
 	//\===================================================
 	//\ Member Variables held in unnamed union for accessibility
 	//\===================================================
@@ -67,10 +68,6 @@ public:
 	bool				operator == (const Matrix3& a_m3) const;
 	bool				operator != (const Matrix3& a_m3) const;
 	//\===================================================
-	//\ Negative Operator
-	//\===================================================
-	const Matrix3		operator - () const;
-	//\===================================================
 	//\ Operator Overloads for Addition
 	//\===================================================
 	const Matrix3		operator + (const Matrix3& a_m3) const;
@@ -100,7 +97,7 @@ public:
 	//\ Inverse- Get Inverse of the Matrix
 	//\===================================================
 	float				Determinant() const;
-	bool				Inverse() const;
+	bool				Inverse();
 	bool				GetInverse(Matrix3 &a_m3) const;
 	//\===================================================
 	//\ Rotation Functions

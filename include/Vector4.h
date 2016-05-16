@@ -111,13 +111,13 @@ public:
 	//\===================================================
 	//\ Dot Product
 	//\===================================================
-	float				Dot(const Vector4& a_v4A, const Vector4& a_v4B);
+	float				Dot(const Vector4& a_v4);
 	friend float		Dot(const Vector4& a_v4A, const Vector4& a_v4B);
 	//\===================================================
 	//\ Normalisation
 	//\===================================================
 	bool				IsUnit() const;
-	float				Normalise();
+	void				Normalise();
 	const Vector4		GetUnit() const;
 	//\===================================================
 	//\ Cross Product
@@ -135,10 +135,9 @@ public:
 	//\===================================================
 	void				Zero();
 	void				One();
-	void				Sum();
-	void				Min();
-	float				Max();
-
+	float				Min() const;
+	float				Max() const;
+	
 private:
 
 };

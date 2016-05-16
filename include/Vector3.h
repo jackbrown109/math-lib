@@ -43,8 +43,10 @@ public:
 	Vector3(const Vector3& a_v3);
 	Vector3(const float a_fVal);
 	Vector3(float a_x, float a_y, float a_z);
-	Vector3(const Vector2& a_xy, float a_z = 1.f);
-	explicit Vector3(const float* a_v3fp);
+
+	//Vector3(const Vector2& a_xy, float a_z = 1.f);
+	//explicit Vector3(const float* a_v3fp);
+
 	//\===================================================
 	//\ Destructor
 	//\===================================================
@@ -117,13 +119,13 @@ public:
 	//\===================================================
 	//\ Dot Product
 	//\===================================================
-	float				Dot(const Vector3& a_v3A, const Vector3& a_v3B);
+	float				Dot(const Vector3& a_v3);
 	friend float		Dot(const Vector3& a_v3A, const Vector3& a_v3B);
 	//\===================================================
 	//\ Normalisation
 	//\===================================================
 	bool				IsUnit() const;
-	float				Normalise();
+	void				Normalise();
 	const Vector3		GetUnit() const;
 	//\===================================================
 	//\ Cross Product
@@ -141,9 +143,8 @@ public:
 	//\===================================================
 	void				Zero();
 	void				One();
-	void				Sum();
-	void				Min();
-	float				Max();
+	float				Min() const;
+	float				Max() const;
 
 };
 
