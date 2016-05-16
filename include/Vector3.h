@@ -4,7 +4,7 @@
 #ifndef __VECTOR3_H__
 #define __VECTOR3_H__
 
-
+#include "mathLib.h"
 
 // Class that implements a 3-dimensional float vector
 

@@ -3,6 +3,7 @@
 #ifndef __VECTOR4_H__
 #define __VECTOR4_H__
 
+#include "mathLib.h"
 
 class Vector4
 {
@@ -35,6 +36,9 @@ public:
 	//\ Constructors
 	//\===================================================
 	Vector4();
+	Vector4(const Vector4& a_v4);
+	Vector4(const float a_fVal);
+	Vector4(float a_x, float a_y, float a_z, float a_t);
 	//\===================================================
 	//\ Destructor
 	//\===================================================
@@ -47,8 +51,8 @@ public:
 	//\===================================================
 	//\ Accessor Operators
 	//\===================================================
-	void						Get(float& a_x, float& a_y, float& a_t) const;
-	void						Set(const float& a_x, const float& a_y, float& a_t);
+	void						Get(float& a_x, float& a_y, float& a_z, float& a_t) const;
+	void						Set(const float& a_x, const float& a_y, const float& a_z, const float& a_t);
 	//\===================================================
 	//\ Equivalence Operators
 	//\===================================================

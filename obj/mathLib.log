@@ -1,29 +1,792 @@
-﻿  Vector3.cpp
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): error C2220: warning treated as error - no 'object' file generated
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C2143: syntax error: missing ',' before '&'
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\matrix4.h(1): fatal error C1014: too many include files: depth = 1024
+﻿  Vector4.cpp
+n:\mathlib\include\vector2.h(18): error C2220: warning treated as error - no 'object' file generated
+n:\mathlib\include\vector2.h(18): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(26): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(34): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(51): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(70): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(70): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(71): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(71): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(72): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(72): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(73): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(74): error C2061: syntax error: identifier 'Vector4'
+n:\mathlib\include\matrix4.h(75): error C2061: syntax error: identifier 'Vector4'
+n:\mathlib\include\matrix4.h(76): error C2061: syntax error: identifier 'Vector4'
+n:\mathlib\include\matrix4.h(77): error C2061: syntax error: identifier 'Vector4'
+n:\mathlib\include\matrix4.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(81): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(81): error C2535: 'void Matrix4::SetX(const int)': member function already defined or declared
+  n:\mathlib\include\matrix4.h(70): note: see declaration of 'Matrix4::SetX'
+n:\mathlib\include\matrix4.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(82): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(82): error C2535: 'void Matrix4::SetY(const int)': member function already defined or declared
+  n:\mathlib\include\matrix4.h(71): note: see declaration of 'Matrix4::SetY'
+n:\mathlib\include\matrix4.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(83): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(83): error C2535: 'void Matrix4::SetZ(const int)': member function already defined or declared
+  n:\mathlib\include\matrix4.h(72): note: see declaration of 'Matrix4::SetZ'
+n:\mathlib\include\matrix4.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(84): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(84): error C2535: 'void Matrix4::SetT(const int)': member function already defined or declared
+  n:\mathlib\include\matrix4.h(73): note: see declaration of 'Matrix4::SetT'
+n:\mathlib\include\matrix4.h(85): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(85): error C2535: 'void Matrix4::GetX(void) const': member function already defined or declared
+  n:\mathlib\include\matrix4.h(74): note: see declaration of 'Matrix4::GetX'
+n:\mathlib\include\matrix4.h(86): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(86): error C2535: 'void Matrix4::GetY(void) const': member function already defined or declared
+  n:\mathlib\include\matrix4.h(75): note: see declaration of 'Matrix4::GetY'
+n:\mathlib\include\matrix4.h(87): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(87): error C2535: 'void Matrix4::GetZ(void) const': member function already defined or declared
+  n:\mathlib\include\matrix4.h(76): note: see declaration of 'Matrix4::GetZ'
+n:\mathlib\include\matrix4.h(88): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(88): error C2535: 'void Matrix4::GetT(void) const': member function already defined or declared
+  n:\mathlib\include\matrix4.h(77): note: see declaration of 'Matrix4::GetT'
+n:\mathlib\include\matrix4.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(92): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(93): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(93): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(93): error C2535: 'void Matrix4::SetCol(int,const int)': member function already defined or declared
+  n:\mathlib\include\matrix4.h(92): note: see declaration of 'Matrix4::SetCol'
+n:\mathlib\include\matrix4.h(95): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(96): error C2061: syntax error: identifier 'Vector4'
+n:\mathlib\include\matrix4.h(96): error C2535: 'void Matrix4::GetCol(int) const': member function already defined or declared
+  n:\mathlib\include\matrix4.h(95): note: see declaration of 'Matrix4::GetCol'
+n:\mathlib\include\matrix4.h(98): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(98): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(99): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(99): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(99): error C2535: 'void Matrix4::SetRow(int,const int)': member function already defined or declared
+  n:\mathlib\include\matrix4.h(98): note: see declaration of 'Matrix4::SetRow'
+n:\mathlib\include\matrix4.h(101): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(102): error C2061: syntax error: identifier 'Vector4'
+n:\mathlib\include\matrix4.h(102): error C2535: 'void Matrix4::GetRow(int) const': member function already defined or declared
+  n:\mathlib\include\matrix4.h(101): note: see declaration of 'Matrix4::GetRow'
+n:\mathlib\include\matrix4.h(129): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(130): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(132): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(132): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(132): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(132): error C2535: 'int Matrix4::operator *(const int) const': member function already defined or declared
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::operator *'
+n:\mathlib\include\matrix4.h(133): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(133): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(133): error C2433: 'Vector4': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix4.h(133): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(133): error C2535: 'int Matrix4::operator *(const int)': member function already defined or declared
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Matrix4::operator *'
+n:\mathlib\include\matrix4.h(145): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(145): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(24): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix3.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(58): error C2146: syntax error: missing ')' before identifier 'vCol'
+n:\mathlib\include\matrix3.h(58): error C3646: 'vCol': unknown override specifier
+n:\mathlib\include\matrix3.h(58): error C2059: syntax error: ')'
+n:\mathlib\include\matrix3.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(59): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(60): error C3646: 'GetCol': unknown override specifier
+n:\mathlib\include\matrix3.h(60): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(60): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(61): error C3646: 'GetRow': unknown override specifier
+n:\mathlib\include\matrix3.h(61): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(61): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(62): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(63): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(89): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(90): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(90): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(119): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(25): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\source\vector4.cpp(72): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(72): error C2143: syntax error: missing ';' before 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(72): error C2086: 'const int Vector4': redefinition
+  n:\mathlib\include\matrix4.h(133): note: see declaration of 'Vector4'
+n:\mathlib\source\vector4.cpp(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(73): error C2556: 'int Vector4::operator -(void) const': overloaded function differs only by return type from 'const Vector4 Vector4::operator -(void) const'
+  n:\mathlib\include\vector4.h(64): note: see declaration of 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(73): error C2373: 'Vector4::operator -': redefinition; different type modifiers
+  n:\mathlib\include\vector4.h(64): note: see declaration of 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(79): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(79): error C2143: syntax error: missing ';' before 'Vector4::operator +'
+n:\mathlib\source\vector4.cpp(79): error C2086: 'const int Vector4': redefinition
+  n:\mathlib\include\matrix4.h(133): note: see declaration of 'Vector4'
+n:\mathlib\source\vector4.cpp(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(80): error C2556: 'int Vector4::operator +(float) const': overloaded function differs only by return type from 'const Vector4 Vector4::operator +(float) const'
+  n:\mathlib\include\vector4.h(68): note: see declaration of 'Vector4::operator +'
+n:\mathlib\source\vector4.cpp(80): error C2373: 'Vector4::operator +': redefinition; different type modifiers
+  n:\mathlib\include\vector4.h(68): note: see declaration of 'Vector4::operator +'
+n:\mathlib\source\vector4.cpp(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(83): error C2143: syntax error: missing ';' before 'Vector4::operator +'
+n:\mathlib\source\vector4.cpp(83): error C2086: 'const int Vector4': redefinition
+  n:\mathlib\include\matrix4.h(133): note: see declaration of 'Vector4'
+n:\mathlib\source\vector4.cpp(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(84): error C2556: 'int Vector4::operator +(const Vector4 &) const': overloaded function differs only by return type from 'const Vector4 Vector4::operator +(const Vector4 &) const'
+  n:\mathlib\include\vector4.h(69): note: see declaration of 'Vector4::operator +'
+n:\mathlib\source\vector4.cpp(84): error C2373: 'Vector4::operator +': redefinition; different type modifiers
+  n:\mathlib\include\vector4.h(69): note: see declaration of 'Vector4::operator +'
+n:\mathlib\source\vector4.cpp(87): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(87): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector4.cpp(87): error C2086: 'const int Vector4': redefinition
+  n:\mathlib\include\matrix4.h(133): note: see declaration of 'Vector4'
+n:\mathlib\source\vector4.cpp(88): error C2761: '+=': member function redeclaration not allowed
+n:\mathlib\source\vector4.cpp(88): error C2059: syntax error: '{'
+n:\mathlib\source\vector4.cpp(88): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\vector4.cpp(88): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\vector4.cpp(95): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(95): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector4.cpp(95): error C2086: 'const int Vector4': redefinition
+  n:\mathlib\include\matrix4.h(133): note: see declaration of 'Vector4'
+n:\mathlib\source\vector4.cpp(96): error C2761: '+=': member function redeclaration not allowed
+n:\mathlib\source\vector4.cpp(96): error C2059: syntax error: '{'
+n:\mathlib\source\vector4.cpp(96): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\vector4.cpp(96): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\vector4.cpp(106): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(106): error C2143: syntax error: missing ';' before 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(106): error C2086: 'const int Vector4': redefinition
+  n:\mathlib\include\matrix4.h(133): note: see declaration of 'Vector4'
+n:\mathlib\source\vector4.cpp(107): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(107): error C2556: 'int Vector4::operator -(float) const': overloaded function differs only by return type from 'const Vector4 Vector4::operator -(float) const'
+  n:\mathlib\include\vector4.h(75): note: see declaration of 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(107): error C2373: 'Vector4::operator -': redefinition; different type modifiers
+  n:\mathlib\include\vector4.h(75): note: see declaration of 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(110): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(110): error C2143: syntax error: missing ';' before 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(110): error C2086: 'const int Vector4': redefinition
+  n:\mathlib\include\matrix4.h(133): note: see declaration of 'Vector4'
+n:\mathlib\source\vector4.cpp(111): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(111): error C2556: 'int Vector4::operator -(const Vector4 &) const': overloaded function differs only by return type from 'const Vector4 Vector4::operator -(const Vector4 &) const'
+  n:\mathlib\include\vector4.h(76): note: see declaration of 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(111): error C2373: 'Vector4::operator -': redefinition; different type modifiers
+  n:\mathlib\include\vector4.h(76): note: see declaration of 'Vector4::operator -'
+n:\mathlib\source\vector4.cpp(114): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector4.cpp(114): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector4.cpp(114): fatal error C1003: error count exceeds 100; stopping compilation
+  Vector3.cpp
+n:\mathlib\include\vector2.h(18): error C2220: warning treated as error - no 'object' file generated
+n:\mathlib\include\vector2.h(18): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(25): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(26): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(34): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(51): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(81): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(82): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(83): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(84): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(85): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(86): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(87): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(88): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(92): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(95): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(98): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(98): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(101): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(129): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(130): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(145): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(145): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(24): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix3.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(58): error C2146: syntax error: missing ')' before identifier 'vCol'
+n:\mathlib\include\matrix3.h(58): error C3646: 'vCol': unknown override specifier
+n:\mathlib\include\matrix3.h(58): error C2059: syntax error: ')'
+n:\mathlib\include\matrix3.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(59): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(60): error C3646: 'GetCol': unknown override specifier
+n:\mathlib\include\matrix3.h(60): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(60): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(61): error C3646: 'GetRow': unknown override specifier
+n:\mathlib\include\matrix3.h(61): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(61): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(62): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(63): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(89): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(90): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(90): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(119): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\source\vector3.cpp(24): error C2572: 'Vector3::Vector3': redefinition of default argument: parameter 1
+  n:\mathlib\include\vector3.h(46): note: see declaration of 'Vector3::Vector3'
+n:\mathlib\source\vector3.cpp(79): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(79): error C2143: syntax error: missing ';' before 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(79): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(80): error C2556: 'int Vector3::operator -(void) const': overloaded function differs only by return type from 'const Vector3 Vector3::operator -(void) const'
+  n:\mathlib\include\vector3.h(70): note: see declaration of 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(80): error C2373: 'Vector3::operator -': redefinition; different type modifiers
+  n:\mathlib\include\vector3.h(70): note: see declaration of 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(86): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(86): error C2143: syntax error: missing ';' before 'Vector3::operator +'
+n:\mathlib\source\vector3.cpp(86): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(87): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(87): error C2556: 'int Vector3::operator +(float) const': overloaded function differs only by return type from 'const Vector3 Vector3::operator +(float) const'
+  n:\mathlib\include\vector3.h(74): note: see declaration of 'Vector3::operator +'
+n:\mathlib\source\vector3.cpp(87): error C2373: 'Vector3::operator +': redefinition; different type modifiers
+  n:\mathlib\include\vector3.h(74): note: see declaration of 'Vector3::operator +'
+n:\mathlib\source\vector3.cpp(90): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(90): error C2143: syntax error: missing ';' before 'Vector3::operator +'
+n:\mathlib\source\vector3.cpp(90): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(91): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(91): error C2556: 'int Vector3::operator +(const Vector3 &) const': overloaded function differs only by return type from 'const Vector3 Vector3::operator +(const Vector3 &) const'
+  n:\mathlib\include\vector3.h(75): note: see declaration of 'Vector3::operator +'
+n:\mathlib\source\vector3.cpp(91): error C2373: 'Vector3::operator +': redefinition; different type modifiers
+  n:\mathlib\include\vector3.h(75): note: see declaration of 'Vector3::operator +'
+n:\mathlib\source\vector3.cpp(94): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(94): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector3.cpp(94): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(95): error C2761: '+=': member function redeclaration not allowed
+n:\mathlib\source\vector3.cpp(95): error C2059: syntax error: '{'
+n:\mathlib\source\vector3.cpp(95): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\vector3.cpp(95): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\vector3.cpp(101): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(101): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector3.cpp(101): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(102): error C2761: '+=': member function redeclaration not allowed
+n:\mathlib\source\vector3.cpp(102): error C2059: syntax error: '{'
+n:\mathlib\source\vector3.cpp(102): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\vector3.cpp(102): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\vector3.cpp(111): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(111): error C2143: syntax error: missing ';' before 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(111): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(112): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(112): error C2556: 'int Vector3::operator -(float) const': overloaded function differs only by return type from 'const Vector3 Vector3::operator -(float) const'
+  n:\mathlib\include\vector3.h(81): note: see declaration of 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(112): error C2373: 'Vector3::operator -': redefinition; different type modifiers
+  n:\mathlib\include\vector3.h(81): note: see declaration of 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(115): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(115): error C2143: syntax error: missing ';' before 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(115): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(116): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(116): error C2556: 'int Vector3::operator -(const Vector3 &) const': overloaded function differs only by return type from 'const Vector3 Vector3::operator -(const Vector3 &) const'
+  n:\mathlib\include\vector3.h(82): note: see declaration of 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(116): error C2373: 'Vector3::operator -': redefinition; different type modifiers
+  n:\mathlib\include\vector3.h(82): note: see declaration of 'Vector3::operator -'
+n:\mathlib\source\vector3.cpp(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(119): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector3.cpp(119): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(120): error C2761: '-=': member function redeclaration not allowed
+n:\mathlib\source\vector3.cpp(120): error C2059: syntax error: '{'
+n:\mathlib\source\vector3.cpp(120): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\vector3.cpp(120): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\vector3.cpp(126): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(126): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector3.cpp(126): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(127): error C2761: '-=': member function redeclaration not allowed
+n:\mathlib\source\vector3.cpp(127): error C2059: syntax error: '{'
+n:\mathlib\source\vector3.cpp(127): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\vector3.cpp(127): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\vector3.cpp(136): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(136): error C2143: syntax error: missing ';' before 'Vector3::operator *'
+n:\mathlib\source\vector3.cpp(136): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(137): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(137): error C2556: 'int Vector3::operator *(float) const': overloaded function differs only by return type from 'const Vector3 Vector3::operator *(float) const'
+  n:\mathlib\include\vector3.h(88): note: see declaration of 'Vector3::operator *'
+n:\mathlib\source\vector3.cpp(137): error C2373: 'Vector3::operator *': redefinition; different type modifiers
+  n:\mathlib\include\vector3.h(88): note: see declaration of 'Vector3::operator *'
+n:\mathlib\source\vector3.cpp(140): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(140): error C2143: syntax error: missing ';' before 'Vector3::operator *'
+n:\mathlib\source\vector3.cpp(140): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(141): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(141): error C2556: 'int Vector3::operator *(const Vector3 &) const': overloaded function differs only by return type from 'const Vector3 Vector3::operator *(const Vector3 &) const'
+  n:\mathlib\include\vector3.h(89): note: see declaration of 'Vector3::operator *'
+n:\mathlib\source\vector3.cpp(141): error C2373: 'Vector3::operator *': redefinition; different type modifiers
+  n:\mathlib\include\vector3.h(89): note: see declaration of 'Vector3::operator *'
+n:\mathlib\source\vector3.cpp(144): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(144): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\source\vector3.cpp(144): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(144): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\vector3.cpp(145): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(145): error C2803: 'operator *' must have at least one formal parameter of class type
+n:\mathlib\source\vector3.cpp(144): warning C4459: declaration of 'Vector3' hides global declaration
+  n:\mathlib\source\vector3.cpp(144): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(148): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(148): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector3.cpp(148): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\vector3.cpp(149): error C2761: '*=': member function redeclaration not allowed
+n:\mathlib\source\vector3.cpp(149): error C2059: syntax error: '{'
+n:\mathlib\source\vector3.cpp(149): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\vector3.cpp(149): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\vector3.cpp(155): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\vector3.cpp(155): error C2143: syntax error: missing ';' before '&'
+n:\mathlib\source\vector3.cpp(155): fatal error C1003: error count exceeds 100; stopping compilation
   Vector2.cpp
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): error C2220: warning treated as error - no 'object' file generated
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C2143: syntax error: missing ',' before '&'
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\mathlib.h(15): fatal error C1014: too many include files: depth = 1024
+n:\mathlib\include\vector2.h(18): error C2220: warning treated as error - no 'object' file generated
+n:\mathlib\include\vector2.h(18): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(25): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(26): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(34): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(51): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(81): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(82): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(83): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(84): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(85): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(86): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(87): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(88): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(92): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(95): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(98): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(98): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(101): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(129): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(130): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(145): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(145): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(24): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix3.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(58): error C2146: syntax error: missing ')' before identifier 'vCol'
+n:\mathlib\include\matrix3.h(58): error C3646: 'vCol': unknown override specifier
+n:\mathlib\include\matrix3.h(58): error C2059: syntax error: ')'
+n:\mathlib\include\matrix3.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(59): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(60): error C3646: 'GetCol': unknown override specifier
+n:\mathlib\include\matrix3.h(60): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(60): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(61): error C3646: 'GetRow': unknown override specifier
+n:\mathlib\include\matrix3.h(61): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(61): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(62): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(63): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(89): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(90): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(90): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(119): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\source\vector2.cpp(137): error C2561: 'operator *': function must return a value
+  n:\mathlib\source\vector2.cpp(135): note: see declaration of 'operator *'
+n:\mathlib\source\vector2.cpp(186): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+n:\mathlib\source\vector2.cpp(275): error C3861: 'lerp': identifier not found
+n:\mathlib\source\vector2.cpp(277): error C3861: 'lerp': identifier not found
+n:\mathlib\source\vector2.cpp(280): error C3861: 'lerp': identifier not found
   Matrix4.cpp
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): error C2220: warning treated as error - no 'object' file generated
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C2143: syntax error: missing ',' before '&'
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\mathlib.h(15): fatal error C1014: too many include files: depth = 1024
+n:\mathlib\include\vector2.h(18): error C2220: warning treated as error - no 'object' file generated
+n:\mathlib\include\vector2.h(18): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(25): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix3.h(24): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix3.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(58): error C2146: syntax error: missing ')' before identifier 'vCol'
+n:\mathlib\include\matrix3.h(58): error C3646: 'vCol': unknown override specifier
+n:\mathlib\include\matrix3.h(58): error C2059: syntax error: ')'
+n:\mathlib\include\matrix3.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(59): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(60): error C3646: 'GetCol': unknown override specifier
+n:\mathlib\include\matrix3.h(60): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(60): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(61): error C3646: 'GetRow': unknown override specifier
+n:\mathlib\include\matrix3.h(61): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(61): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(62): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(63): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(89): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(90): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(90): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(119): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(26): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(34): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(81): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(82): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(83): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(84): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(85): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(86): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(87): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(88): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(92): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(95): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(98): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(98): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(101): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(129): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(129): error C2327: 'Matrix4::Vector3': is not a type name, static, or enumerator
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(130): error C2327: 'Matrix4::Vector3': is not a type name, static, or enumerator
+n:\mathlib\include\matrix4.h(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(130): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(145): error C2327: 'Matrix4::Vector3': is not a type name, static, or enumerator
+n:\mathlib\include\matrix4.h(145): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(145): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(8): error C2789: 'Matrix4::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(13): error C2789: 'Matrix4::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(21): error C2789: 'Matrix4::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(25): error C2789: 'Matrix4::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(29): error C2789: 'Matrix4::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(100): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(100): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(100): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(100): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(104): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(104): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(104): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(104): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(108): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(108): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(108): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(108): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(112): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(112): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(112): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(112): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(117): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix4.cpp(117): error C2597: illegal reference to non-static member 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(117): error C3867: 'Matrix4::Vector3': non-standard syntax; use '&' to create a pointer to member
+n:\mathlib\source\matrix4.cpp(117): error C2761: 'GetX': member function redeclaration not allowed
+n:\mathlib\source\matrix4.cpp(117): error C2143: syntax error: missing ';' before 'const'
+n:\mathlib\source\matrix4.cpp(118): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(118): warning C4091: ' ': ignored on left of 'const int' when no variable is declared
+n:\mathlib\source\matrix4.cpp(118): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\matrix4.cpp(118): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\matrix4.cpp(121): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix4.cpp(121): error C2597: illegal reference to non-static member 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(121): error C3867: 'Matrix4::Vector3': non-standard syntax; use '&' to create a pointer to member
+n:\mathlib\source\matrix4.cpp(121): error C2761: 'GetY': member function redeclaration not allowed
+n:\mathlib\source\matrix4.cpp(121): error C2143: syntax error: missing ';' before 'const'
+n:\mathlib\source\matrix4.cpp(122): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(122): warning C4091: ' ': ignored on left of 'const int' when no variable is declared
+n:\mathlib\source\matrix4.cpp(122): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\matrix4.cpp(122): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\matrix4.cpp(125): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix4.cpp(125): error C2597: illegal reference to non-static member 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(125): error C3867: 'Matrix4::Vector3': non-standard syntax; use '&' to create a pointer to member
+n:\mathlib\source\matrix4.cpp(125): error C2761: 'GetZ': member function redeclaration not allowed
+n:\mathlib\source\matrix4.cpp(125): error C2143: syntax error: missing ';' before 'const'
+n:\mathlib\source\matrix4.cpp(126): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(126): warning C4091: ' ': ignored on left of 'const int' when no variable is declared
+n:\mathlib\source\matrix4.cpp(126): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\matrix4.cpp(126): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\matrix4.cpp(129): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix4.cpp(129): error C2597: illegal reference to non-static member 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(129): error C3867: 'Matrix4::Vector3': non-standard syntax; use '&' to create a pointer to member
+n:\mathlib\source\matrix4.cpp(129): error C2761: 'GetT': member function redeclaration not allowed
+n:\mathlib\source\matrix4.cpp(129): error C2143: syntax error: missing ';' before 'const'
+n:\mathlib\source\matrix4.cpp(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(130): warning C4091: ' ': ignored on left of 'const int' when no variable is declared
+n:\mathlib\source\matrix4.cpp(130): error C2143: syntax error: missing ';' before '{'
+n:\mathlib\source\matrix4.cpp(130): error C2447: '{': missing function header (old-style formal list?)
+n:\mathlib\source\matrix4.cpp(136): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(136): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(136): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(136): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(145): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\source\matrix4.cpp(154): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(154): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(154): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(154): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(163): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\source\matrix4.cpp(227): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(227): error C2143: syntax error: missing ';' before 'Matrix4::operator *'
+n:\mathlib\source\matrix4.cpp(227): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix3.h(90): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix4.cpp(227): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(228): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(227): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(227): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
+n:\mathlib\source\matrix4.cpp(231): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(231): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\source\matrix4.cpp(231): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix3.h(90): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix4.cpp(231): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(232): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(232): error C2803: 'operator *' must have at least one formal parameter of class type
+n:\mathlib\source\matrix4.cpp(231): warning C4459: declaration of 'Vector3' hides global declaration
+  n:\mathlib\source\matrix4.cpp(231): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix3.h(90): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix4.cpp(267): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix4.cpp(267): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix4.cpp(267): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix4.cpp(267): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(129): note: see declaration of 'Matrix4::Vector3'
   Matrix3.cpp
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): error C2220: warning treated as error - no 'object' file generated
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\vector3.h(46): error C2143: syntax error: missing ',' before '&'
-c:\users\jackb\desktop\year 1 semester 2\programming\mathlib\include\mathlib.h(15): fatal error C1014: too many include files: depth = 1024
+n:\mathlib\include\vector2.h(18): error C2220: warning treated as error - no 'object' file generated
+n:\mathlib\include\vector2.h(18): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector2.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector4.h(25): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(21): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(26): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(34): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix4.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(51): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(81): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(82): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(83): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(84): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(85): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(86): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(87): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(88): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(92): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(95): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(98): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(98): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(101): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix4.h(129): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(129): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix4.h(130): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix4.h(130): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix4.h(145): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix4.h(145): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\vector3.h(23): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\vector3.h(27): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix3.h(24): warning C4201: nonstandard extension used: nameless struct/union
+n:\mathlib\include\matrix3.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(58): error C2146: syntax error: missing ')' before identifier 'vCol'
+n:\mathlib\include\matrix3.h(58): error C3646: 'vCol': unknown override specifier
+n:\mathlib\include\matrix3.h(58): error C2059: syntax error: ')'
+n:\mathlib\include\matrix3.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(59): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(60): error C3646: 'GetCol': unknown override specifier
+n:\mathlib\include\matrix3.h(60): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(60): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(61): error C3646: 'GetRow': unknown override specifier
+n:\mathlib\include\matrix3.h(61): error C2059: syntax error: '('
+n:\mathlib\include\matrix3.h(61): error C2238: unexpected token(s) preceding ';'
+n:\mathlib\include\matrix3.h(62): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(63): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\include\matrix3.h(89): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(89): error C2327: 'Matrix3::Vector3': is not a type name, static, or enumerator
+n:\mathlib\include\matrix3.h(89): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(90): error C2327: 'Matrix3::Vector3': is not a type name, static, or enumerator
+n:\mathlib\include\matrix3.h(90): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\include\matrix3.h(90): error C2433: 'Vector3': 'friend' not permitted on data declarations
+n:\mathlib\include\matrix3.h(90): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\include\matrix3.h(119): error C2327: 'Matrix3::Vector3': is not a type name, static, or enumerator
+n:\mathlib\include\matrix3.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\include\matrix3.h(119): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix3.cpp(12): error C2789: 'Matrix3::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(19): error C2789: 'Matrix3::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(26): error C2789: 'Matrix3::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(30): error C2789: 'Matrix3::Vector3': an object of const-qualified type must be initialized
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(67): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(67): error C2146: syntax error: missing ')' before identifier 'vCol'
+n:\mathlib\source\matrix3.cpp(67): error C3646: 'vCol': unknown override specifier
+n:\mathlib\source\matrix3.cpp(67): error C2059: syntax error: ')'
+n:\mathlib\source\matrix3.cpp(67): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix3.cpp(67): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(69): error C2065: 'vCol': undeclared identifier
+n:\mathlib\source\matrix3.cpp(69): error C2228: left of '.x' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(69): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(70): error C2065: 'vCol': undeclared identifier
+n:\mathlib\source\matrix3.cpp(70): error C2228: left of '.y' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(70): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(71): error C2065: 'vCol': undeclared identifier
+n:\mathlib\source\matrix3.cpp(71): error C2228: left of '.z' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(71): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(73): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix3.cpp(73): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix3.cpp(73): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(75): error C2065: 'vRow': undeclared identifier
+n:\mathlib\source\matrix3.cpp(75): error C2228: left of '.x' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(75): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(76): error C2065: 'vRow': undeclared identifier
+n:\mathlib\source\matrix3.cpp(76): error C2228: left of '.y' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(76): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(77): error C2065: 'vRow': undeclared identifier
+n:\mathlib\source\matrix3.cpp(77): error C2228: left of '.z' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(77): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(79): error C2143: syntax error: missing ';' before 'Matrix3::GetCol'
+n:\mathlib\source\matrix3.cpp(79): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(79): error C2373: 'Vector3': redefinition; different type modifiers
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix3.cpp(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(80): error C2556: 'int Matrix3::GetCol(int) const': overloaded function differs only by return type from 'void Matrix3::GetCol(int) const'
+  n:\mathlib\include\matrix3.h(62): note: see declaration of 'Matrix3::GetCol'
+n:\mathlib\source\matrix3.cpp(80): error C2371: 'Matrix3::GetCol': redefinition; different basic types
+  n:\mathlib\include\matrix3.h(62): note: see declaration of 'Matrix3::GetCol'
+n:\mathlib\source\matrix3.cpp(81): error C2064: term does not evaluate to a function taking 3 arguments
+n:\mathlib\source\matrix3.cpp(83): error C2143: syntax error: missing ';' before 'Matrix3::GetRow'
+n:\mathlib\source\matrix3.cpp(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(83): error C2373: 'Vector3': redefinition; different type modifiers
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix3.cpp(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(84): error C2556: 'int Matrix3::GetRow(int) const': overloaded function differs only by return type from 'void Matrix3::GetRow(int) const'
+  n:\mathlib\include\matrix3.h(63): note: see declaration of 'Matrix3::GetRow'
+n:\mathlib\source\matrix3.cpp(84): error C2371: 'Matrix3::GetRow': redefinition; different basic types
+  n:\mathlib\include\matrix3.h(63): note: see declaration of 'Matrix3::GetRow'
+n:\mathlib\source\matrix3.cpp(85): error C2064: term does not evaluate to a function taking 3 arguments
+n:\mathlib\source\matrix3.cpp(87): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\source\matrix3.cpp(88): error C2084: function 'void Matrix3::GetCol(int) const' already has a body
+  n:\mathlib\source\matrix3.cpp(79): note: see previous definition of 'GetCol'
+n:\mathlib\source\matrix3.cpp(89): error C2065: 'vCol': undeclared identifier
+n:\mathlib\source\matrix3.cpp(89): error C2228: left of '.Set' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(89): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(91): error C2061: syntax error: identifier 'Vector3'
+n:\mathlib\source\matrix3.cpp(92): error C2084: function 'void Matrix3::GetRow(int) const' already has a body
+  n:\mathlib\source\matrix3.cpp(83): note: see previous definition of 'GetRow'
+n:\mathlib\source\matrix3.cpp(93): error C2065: 'vRow': undeclared identifier
+n:\mathlib\source\matrix3.cpp(93): error C2228: left of '.Set' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(93): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(199): error C2143: syntax error: missing ';' before 'Matrix3::operator *'
+n:\mathlib\source\matrix3.cpp(199): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix3.cpp(199): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix3.cpp(200): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(199): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix3.cpp(199): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(201): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix3.cpp(201): error C2228: left of '.x' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(201): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(201): error C2228: left of '.y' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(201): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(201): error C2228: left of '.z' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(201): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(202): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix3.cpp(202): error C2228: left of '.x' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(202): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(202): error C2228: left of '.y' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(202): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(202): error C2228: left of '.z' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(202): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(203): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix3.cpp(203): error C2228: left of '.x' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(203): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(203): error C2228: left of '.y' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(203): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(203): error C2228: left of '.z' must have class/struct/union
+  n:\mathlib\source\matrix3.cpp(203): note: type is 'unknown-type'
+n:\mathlib\source\matrix3.cpp(203): error C2064: term does not evaluate to a function taking 1 arguments
+n:\mathlib\source\matrix3.cpp(205): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(205): error C2143: syntax error: missing ';' before '*'
+n:\mathlib\source\matrix3.cpp(205): error C2086: 'const int Vector3': redefinition
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix3.cpp(205): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix3.cpp(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(206): error C2803: 'operator *' must have at least one formal parameter of class type
+n:\mathlib\source\matrix3.cpp(205): warning C4459: declaration of 'Vector3' hides global declaration
+  n:\mathlib\source\matrix3.cpp(205): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix4.h(130): note: see declaration of 'Vector3'
+n:\mathlib\source\matrix3.cpp(344): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+n:\mathlib\source\matrix3.cpp(344): error C2143: syntax error: missing ',' before '&'
+n:\mathlib\source\matrix3.cpp(344): warning C4458: declaration of 'Vector3' hides class member
+  n:\mathlib\source\matrix3.cpp(344): note: to simplify migration, consider the temporary use of /Wv:18 flag with the version of the compiler with which you used to build without warnings
+  n:\mathlib\include\matrix3.h(89): note: see declaration of 'Matrix3::Vector3'
+n:\mathlib\source\matrix3.cpp(346): error C2065: 'a_v3': undeclared identifier
+n:\mathlib\source\matrix3.cpp(346): error C2228: left of '.x' must have class/struct/union
+n:\mathlib\source\matrix3.cpp(346): fatal error C1003: error count exceeds 100; stopping compilation
   Generating Code...

@@ -3,7 +3,7 @@
 #ifndef __MATRIX3_H__
 #define __MATRIX3_H__
 
-
+#include "mathLib.h"
 
 class Matrix3
 {
@@ -57,8 +57,8 @@ public:
 	//\===================================================
 	void				SetCol(int iCol, const Vector3 vCol);
 	void				SetRow(int iRow, const Vector3& vRow);
-	Vector3			GetCol(int iCol) const;
-	Vector3			GetRow(int iRow) const;
+	Vector3				GetCol(int iCol) const;
+	Vector3				GetRow(int iRow) const;
 	void				GetCol(int iCol, Vector3& vCol) const;
 	void				GetRow(int iRow, Vector3& vRow) const;
 	//\===================================================
@@ -95,7 +95,7 @@ public:
 	//\ Transpose Matrix- Transform from Row to Column
 	//\===================================================
 	void				Transpose();
-	void				GetTranspose(Matrix3 &a_m3) const;
+	void				GetTranspose(Matrix3 &a_m3);
 	//\===================================================
 	//\ Inverse- Get Inverse of the Matrix
 	//\===================================================

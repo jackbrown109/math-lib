@@ -4,6 +4,8 @@
 #ifndef __MATRIX4_H__
 #define __MATRIX4_H__
 
+#include "mathLib.h"
+
 class Matrix4
 {
 public:

@@ -1,4 +1,4 @@
-#pragma once
+
 
 #ifndef __VECTOR2_H__
 #define __VECTOR2_H__
@@ -8,15 +8,14 @@
 class Vector2
 {
 public:
-#pragma region Member Variables Union
+//#pragma region Member Variables Union
 	union
 	{
 		struct
 		{
 			float x;
 			float y;
-		};
-		
+		};		
 		struct
 		{
 			float u;
@@ -28,7 +27,7 @@ public:
 		};
 	};
 
-	#pragma endregion
+//	#pragma endregion
 	#pragma region Constant Vectors
 
 	//\===================================================
@@ -123,7 +122,7 @@ public:
 	//\ Normalisation
 	//\===================================================
 	bool				IsUnit() const;
-	float				Normalise();
+	Vector2				Normalise();
 	const Vector2		GetUnit() const;
 	//\===================================================
 	//\ Get Perpendicular

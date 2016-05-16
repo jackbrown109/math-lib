@@ -8,6 +8,18 @@ Vector4::Vector4()
 {
 
 }
+Vector4::Vector4(const Vector4& a_v4)
+{
+
+}
+Vector4::Vector4(const float a_fVal)
+{
+
+}
+Vector4::Vector4(float a_x, float a_y, float a_z, float a_t)
+{
+
+}
 //\===================================================
 //\ Destructor
 //\===================================================
@@ -29,24 +41,30 @@ Vector4::operator const float* ()const
 //\===================================================
 //\ Accessor Operators
 //\===================================================
-void Vector4::Get(float& a_x, float& a_y, float& a_t) const
+void Vector4::Get(float& a_x, float& a_y, float& a_z, float& a_t) const
 {
-
+	a_x = x;
+	a_y = y;
+	a_z = z;
+	a_t = t;
 }
-void Vector4::Set(const float& a_x, const float& a_y, float& a_t)
+void Vector4::Set(const float& a_x, const float& a_y, const float& a_z, const float& a_t)
 {
-
+	x = a_x;
+	y = a_y;
+	z = a_z;
+	t = a_t;
 }
 //\===================================================
 //\ Equivalence Operators
 //\===================================================
-bool Vector4::operator ==		(const Vector4& a_v4) const
+bool Vector4::operator == (const Vector4& a_v4) const
 {
-
+	return (x == a_v4.x && y == a_v4.y && z == a_v4.z && t == a_v4.t);
 }
-bool Vector4::operator !=		(const Vector4& a_v4) const
+bool Vector4::operator != (const Vector4& a_v4) const
 {
-
+	return (x != a_v4.x || y != a_v4.y || z != a_v4.z || t != a_v4.t);
 }
 //\===================================================
 //\ Neg Operator
@@ -60,49 +78,65 @@ const Vector4 Vector4::operator - () const
 //\===================================================
 const Vector4 Vector4::operator + (float a_fScalar) const
 {
-	return;
+	return Vector4(x + a_fScalar, y + a_fScalar, z + a_fScalar, t + a_fScalar);
 }
 const Vector4 Vector4::operator + (const Vector4& a_v4) const
 {
-	return;
+	return Vector4(x + a_v4.x, y + a_v4.y, z + a_v4.z, t + a_v4.t);
 }
 const Vector4& Vector4::operator += (float a_fScalar)
 {
-	return;
+	x += a_fScalar;
+	y += a_fScalar;
+	z += a_fScalar;
+	t += a_fScalar;
+	return *this;
 }
 const Vector4& Vector4::operator += (const Vector4& a_v4)
 {
-	return;
+	x += a_v4.x;
+	y += a_v4.y;
+	z += a_v4.z;
+	t += a_v4.t;
+	return *this;
 }
 //\===================================================
 //\ Overload Operators for Vector4 Subtraction
 //\===================================================
 const Vector4 Vector4::operator - (float a_fScalar) const
 {								
-	return;
+	return Vector4(x - a_fScalar, y - a_fScalar, z - a_fScalar, t - a_fScalar);
 }								
 const Vector4 Vector4::operator - (const Vector4& a_v4) const
 {
-	return;
+	return Vector4(x - a_v4.x, y - a_v4.y, z - a_v4.z, t - a_v4.t);
 }
 const Vector4& Vector4::operator -= (float a_fScalar)
 {
-	return;
+	x -= a_fScalar;
+	y -= a_fScalar;
+	z -= a_fScalar;
+	t -= a_fScalar;
+	return *this;
 }
 const Vector4& Vector4::operator -= (const Vector4& a_v4)
 {
-	return;
+	x -= a_v4.x;
+	y -= a_v4.y;
+	z -= a_v4.z;
+	t -= a_v4.t;
+	return *this;
 }
 //\===================================================
 //\ Overload Operators for Vector4 Multiplication
 //\===================================================
 const Vector4 Vector4::operator * (float a_fScalar) const
 {
-	return;
+	return Vector4(x * a_fScalar, y * a_fScalar, z * a_fScalar, t * a_fScalar);
 }
 const Vector4 Vector4::operator * (const Vector4& a_v4) const
 {
-	return;
+	return Vector4(x * a_v4.x, y * a_v4.y, z * a_v4.z, t * a_v4.t);
 }
 const Vector4 operator * (float a_fScalar, const Vector4& a_v4)
 {
@@ -110,30 +144,44 @@ const Vector4 operator * (float a_fScalar, const Vector4& a_v4)
 }
 const Vector4& Vector4::operator *= (float a_fScalar)
 {
-	return;
+	x *= a_fScalar;
+	y *= a_fScalar;
+	z *= a_fScalar;
+	t *= a_fScalar;
+	return *this;
 }
 const Vector4& Vector4::operator *= (const Vector4& a_v4)
 {
-	return;
+	x *= a_v4.x;
+	y *= a_v4.y;
+	z *= a_v4.z;
+	t *= a_v4.t;
+	return *this;
 }
 //\===================================================
 //\ Overload Operators for Vector4 Division
 //\===================================================
 const Vector4 Vector4::operator / (float a_fScalar) const
 {
-	return;
+	return Vector4(x / a_fScalar, y / a_fScalar, z / a_fScalar, t / a_fScalar);
 }
 const Vector4 Vector4::operator / (const Vector4& a_v4) const
 {
-	return;
+	return Vector4(x / a_v4.x, y / a_v4.y, z / a_v4.z, t / a_v4.t);
 }
 const Vector4& Vector4::operator /= (float a_fScalar)
 {
-	return;
+	x /= a_fScalar;
+	y /= a_fScalar;
+	z /= a_fScalar;
+	return *this;
 }
 const Vector4& Vector4::operator /= (const Vector4& a_v4)
 {
-	return;
+	x /= a_v4.x;
+	y /= a_v4.y;
+	z /= a_v4.z;
+	return *this;
 }
 //\===================================================
 //\ Magnitude

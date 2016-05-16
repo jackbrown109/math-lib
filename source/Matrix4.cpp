@@ -1,7 +1,4 @@
 #include "Matrix4.h"
-#include "Matrix3.h"
-#include "Vector3.h"
-#include "Vector4.h"
 
 
 //\=============================================================================
@@ -24,9 +21,9 @@ Matrix4::Matrix4(float m_11, float m_12, float m_13, float m_14,
 {
 
 }
-Matrix4::Matrix4(const Matrix3& a_m3)
+Matrix4::Matrix4(const Matrix3 & a_m3)
 {
-	
+
 }
 Matrix4::Matrix4(const Matrix4& a_m4)
 {
@@ -117,19 +114,19 @@ void Matrix4::SetT(const Vector3& a_v3)
 
 }
 
-void Matrix4::GetX(const Vector3& a_v3) const
+void Matrix4::GetX(Vector3& a_v3) const
 {
 
 }
-void Matrix4::GetY(const Vector3& a_v3) const
+void Matrix4::GetY(Vector3& a_v3) const
 {
 
 }
-void Matrix4::GetZ(const Vector3& a_v3) const
+void Matrix4::GetZ(Vector3& a_v3) const
 {
 
 }
-void Matrix4::GetT(const Vector3& a_v3) const
+void Matrix4::GetT(Vector3& a_v3) const
 {
 
 }

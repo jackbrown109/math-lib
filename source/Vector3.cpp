@@ -52,11 +52,15 @@ Vector3::operator const	float*() const
 //\===================================================
 void Vector3::Get(float& a_x, float& a_y, float& a_z) const
 {
-
+	a_x = x;
+	a_y = y;
+	a_z = z;
 }
 void Vector3::Set(const float& a_x, const float& a_y, const float& a_z)
 {
-
+	x = a_x;
+	y = a_y;
+	z = a_z;
 }
 //\===================================================
 //\ Equivalence Operators
@@ -74,14 +78,14 @@ bool Vector3::operator!= (const Vector3& a_v3) const
 //\===================================================
 const Vector3 Vector3::operator - () const
 {
-	return;
+	return Vector3(x* -1, y* -1, z* -1);
 }
 //\===================================================
 //\ Overload Operators for Vector3 Addition
 //\===================================================
-const Vector3 Vector3::operator +(float a_fScalar) const
+const Vector3 Vector3::operator + (float a_fScalar) const
 {
-	return Vector3(x + a_fScalar.x, y + a_fScalar.y, z + a_fScalar.z);
+	return Vector3(x + a_fScalar, y + a_fScalar, z + a_fScalar);
 }
 const Vector3 Vector3::operator +(const Vector3& a_v3) const
 {
@@ -89,9 +93,9 @@ const Vector3 Vector3::operator +(const Vector3& a_v3) const
 }
 const Vector3& Vector3::operator +=(float a_fScalar)
 {
-	x += a_fScalar.x;
-	y += a_fScalar.y;
-	z += a_fScalar.z;
+	x += a_fScalar;
+	y += a_fScalar;
+	z += a_fScalar;
 	return *this;
 }
 const Vector3& Vector3::operator += (const Vector3& a_v3)
@@ -106,7 +110,7 @@ const Vector3& Vector3::operator += (const Vector3& a_v3)
 //\===================================================
 const Vector3 Vector3::operator -(float a_fScalar) const
 {
-	return Vector3(x - a_fScalar.x, y - a_fScalar.y, z - a_fScalar.z);
+	return Vector3(x - a_fScalar, y - a_fScalar, z - a_fScalar);
 }
 const Vector3 Vector3::operator -(const Vector3& a_v3) const
 {
@@ -114,9 +118,9 @@ const Vector3 Vector3::operator -(const Vector3& a_v3) const
 }
 const Vector3& Vector3::operator -=(float a_fScalar)
 {
-	x -= a_fScalar.x;
-	y -= a_fScalar.y;
-	z -= a_fScalar.z;
+	x -= a_fScalar;
+	y -= a_fScalar;
+	z -= a_fScalar;
 	return *this;
 }
 const Vector3& Vector3::operator -=(const Vector3& a_v3)
@@ -131,7 +135,7 @@ const Vector3& Vector3::operator -=(const Vector3& a_v3)
 //\===================================================
 const Vector3 Vector3::operator * (float a_fScalar) const
 {
-	return Vector3(x * a_fScalar.x, y * a_fScalar.y, z * a_fScalar.z);
+	return Vector3(x * a_fScalar, y * a_fScalar, z * a_fScalar);
 }
 const Vector3 Vector3::operator * (const Vector3& a_v3) const
 {
@@ -139,13 +143,13 @@ const Vector3 Vector3::operator * (const Vector3& a_v3) const
 }
 const Vector3 operator * (float a_fScalar, const Vector3& a_v3)
 {
-
+	return;
 }
 const Vector3& Vector3::operator *=(float a_fScalar)
 {
-	x *= a_fScalar.x;
-	y *= a_fScalar.y;
-	z *= a_fScalar.z;
+	x *= a_fScalar;
+	y *= a_fScalar;
+	z *= a_fScalar;
 		return *this;
 }
 const Vector3& Vector3::operator *=(const Vector3& a_v3)
@@ -160,7 +164,7 @@ const Vector3& Vector3::operator *=(const Vector3& a_v3)
 //\===================================================
 const Vector3 Vector3::operator /(float a_fScalar) const
 {
-	return Vector3(x / a_fScalar.x, y / a_fScalar.y, z / a_fScalar.z);
+	return Vector3(x / a_fScalar, y / a_fScalar, z / a_fScalar);
 }
 const Vector3 Vector3::operator /(const Vector3& a_v3) const
 {
@@ -168,9 +172,9 @@ const Vector3 Vector3::operator /(const Vector3& a_v3) const
 }
 const Vector3& Vector3::operator /=(float a_fScalar)
 {
-	x /= a_fScalar.x;
-	y /= a_fScalar.y;
-	z /= a_fScalar.z;
+	x /= a_fScalar;
+	y /= a_fScalar;
+	z /= a_fScalar;
 		return *this;
 }
 const Vector3& Vector3::operator /=(const Vector3& a_v3)

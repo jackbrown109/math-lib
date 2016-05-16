@@ -1,5 +1,5 @@
 #include "Vector2.h"
-
+#include "mathLib.h"
 
 //\===================================================
 //\ Constructors
@@ -47,11 +47,13 @@ Vector2::operator const float*() const
 //\===================================================
 void Vector2::Get(float& a_x, float& a_y) const
 {
-	
+	a_x = x;
+	a_y = y;
 }
 void Vector2::Set(const float& a_x, const float& a_y)
 {
-
+	x = a_x;
+	y = a_y;
 }
 //\===================================================
 //\ Equivalence Operators
@@ -70,14 +72,14 @@ bool Vector2::operator !=(const Vector2 a_v2) const
 //\===================================================
 const Vector2 Vector2::operator -() const
 {
-
+	return Vector2(x* -1, y* -1);
 }
 //\===================================================
 //\ Overload Operators for Vector2 Addition
 //\===================================================
 const Vector2 Vector2::operator + (float a_fScalar) const
 {
-	return Vector2(x + a_fScalar.x, y + a_fScalar.y);
+	return Vector2(x + a_fScalar, y + a_fScalar);
 }
 const Vector2 Vector2::operator +(const Vector2& a_v2) const
 {
@@ -85,8 +87,8 @@ const Vector2 Vector2::operator +(const Vector2& a_v2) const
 }
 const Vector2& Vector2::operator +=(float a_fScalar)
 {
-	x += a_fScalar.x;
-	y += a_fScalar.y;
+	x += a_fScalar;
+	y += a_fScalar;
 	return *this;
 }
 const Vector2& Vector2::operator +=(const Vector2& a_v2)
@@ -100,7 +102,7 @@ const Vector2& Vector2::operator +=(const Vector2& a_v2)
 //\===================================================
 const Vector2 Vector2::operator -(float a_fScalar) const
 {
-	return Vector2(x - a_fScalar.x, y - a_fScalar.y);
+	return Vector2(x - a_fScalar, y - a_fScalar);
 }
 const Vector2 Vector2::operator -(const Vector2& a_v2) const
 {
@@ -108,8 +110,8 @@ const Vector2 Vector2::operator -(const Vector2& a_v2) const
 }
 const Vector2& Vector2::operator -=(float a_fScalar)
 {
-	x -= a_fScalar.x;
-	y -= a_fScalar.y;
+	x -= a_fScalar;
+	y -= a_fScalar;
 	return *this;
 }
 const Vector2& Vector2::operator -=(const Vector2& a_v2)
@@ -123,7 +125,7 @@ const Vector2& Vector2::operator -=(const Vector2& a_v2)
 //\===================================================
 const Vector2 Vector2::operator *(float a_fScalar) const
 {
-	return Vector2(x * a_fScalar.x, y * a_fScalar.y);
+	return Vector2(x * a_fScalar, y * a_fScalar);
 }
 const Vector2 Vector2::operator *(const Vector2& a_v2) const
 {
@@ -137,8 +139,8 @@ const Vector2 operator*(float a_fScalar, const Vector2 & a_v2)
 
 const Vector2& Vector2::operator *=(float a_fScalar)
 {
-	x *= a_fScalar.x;
-	y *= a_fScalar.y;
+	x *= a_fScalar;
+	y *= a_fScalar;
 	return *this;
 }
 const Vector2& Vector2::operator *=(const Vector2& a_v2)
@@ -153,7 +155,7 @@ const Vector2& Vector2::operator *=(const Vector2& a_v2)
 //\===================================================
 const Vector2 Vector2::operator /(float a_fScalar) const
 {
-	return Vector2(x / a_fScalar.x, y / a_fScalar.y);
+	return Vector2(x / a_fScalar, y / a_fScalar);
 }
 const Vector2 Vector2::operator /(const Vector2& a_v2) const
 {
@@ -161,8 +163,8 @@ const Vector2 Vector2::operator /(const Vector2& a_v2) const
 }
 const Vector2& Vector2::operator /=(float a_fScalar)
 {
-	x /= a_fScalar.x;
-	y /= a_fScalar.y;
+	x /= a_fScalar;
+	y /= a_fScalar;
 	return *this;
 }
 const Vector2& Vector2::operator /=(const Vector2& a_v2)
@@ -176,19 +178,20 @@ const Vector2& Vector2::operator /=(const Vector2& a_v2)
 //\===================================================
 float Vector2::Length() const
 {
-
+	return x*x + y*y;
 }
 float Vector2::Magnitude() const
 {
-
+	double m = (x*x) + (y*y);
+	return sqrt(m);
 }
 float Vector2::LengthSquared() const
 {
-
+	return (x*x + y*y) + (x*x + y*y);
 }
 float Vector2::MagnitudeSquared() const
 {
-	
+	return (x*x) + (y*y);
 }
 //\===================================================
 //\ Distance
@@ -206,11 +209,11 @@ float DistanceSquared(const Vector2& a_v2A, const Vector2& a_v2B)
 //\===================================================
 float Vector2::Dot(const Vector2& a_v2A, const Vector2& a_v2B)
 {
-
+	return (x * a_v2A.x + y * a_v2B.y);
 }
 float Dot(const Vector2& a_v2A, const Vector2& a_v2B)
 {
-
+	return a_v2A.x * a_v2B.x + a_v2A.y * a_v2B.y;
 }
 //\===================================================
 //\ Normalisation
@@ -222,20 +225,26 @@ bool Vector2::IsUnit()const
 	}
 	return false;
 }
-float Vector2::Normalise()
+Vector2 Vector2::Normalise()
 {
-
+	float m = Magnitude();
+	float Nx = x / m;
+	float Ny = y / m;
+	return Vector2(Nx, Ny);
 }
 const Vector2 Vector2::GetUnit() const
 {
-
+	float m = Magnitude();
 }
 //\===================================================
 //\ Get Perpendicular
 //\===================================================
 Vector2 Vector2::GetPerpendicular() const
 {
-
+	Vector2 PVect;
+	PVect.x = y;
+	PVect.y = -x;
+	return PVect;
 }
 //\===================================================
 //\ Transformation Functions
