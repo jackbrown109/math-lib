@@ -82,6 +82,46 @@ float Matrix4::operator()(int iRow, int iCol) const
 	return m[iRow][iCol];
 }
 //\=============================================================================
+//\ Component Access
+//\=============================================================================
+
+/*
+Vector4& Matrix4::x(void)
+{
+	
+}
+Vector4& Matrix4::y(void)
+{
+
+}
+Vector4& Matrix4::z(void)
+{
+
+}
+Vector4& Matrix4::t(void)
+{
+
+}
+
+const Vector4& Matrix4::x(void) const
+{
+
+}
+const Vector4& Matrix4::y(void) const
+{
+
+}
+const Vector4& Matrix4::z(void) const
+{
+
+}
+const Vector4& Matrix4::t(void) const
+{
+
+}
+*/
+
+//\=============================================================================
 //\ Component Access/ Retrieval as Vector4
 //\=============================================================================
 void Matrix4::SetX(const Vector4& a_v4)

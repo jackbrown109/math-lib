@@ -68,6 +68,21 @@ public:
 	float&				operator ()(int iRow, int iCol);
 	float				operator ()(int iRow, int iCol) const;
 	//\=============================================================================
+	//\ Component Access
+	//\=============================================================================
+
+	/*
+	Vector4&					x(void);
+	Vector4&					y(void);
+	Vector4&					z(void);
+	Vector4&					t(void);
+	const Vector4&				x(void) const;
+	const Vector4&				y(void) const;
+	const Vector4&				z(void) const;
+	const Vector4&				t(void) const;
+	*/
+
+	//\=============================================================================
 	//\ Component Access/ Retrieval as Vector4
 	//\=============================================================================
 	void				SetX(const Vector4& a_v4);
