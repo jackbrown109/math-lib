@@ -1,5 +1,14 @@
 #include "mathLib.h"
 
+const Vector2 Vector2::ONE = Vector2(1.f, 1.f);
+					
+const Vector2 Vector2::ZERO = Vector2(0.f, 0.f);
+					
+const Vector2 Vector2::AXIS_X = Vector2(1.f, 0.f);
+					
+const Vector2 Vector2::AXIS_Y = Vector2(0.f, 1.f);
+
+
 //\===================================================
 //\ Constructors
 //\===================================================

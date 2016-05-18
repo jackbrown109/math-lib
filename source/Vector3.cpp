@@ -1,5 +1,15 @@
 #include "mathLib.h"
 
+const Vector3 Vector3::ONE = Vector3(1.f);
+			  		 
+const Vector3 Vector3::ZERO = Vector3(0.f);
+			  		
+const Vector3 Vector3::AXIS_X = Vector3(1.f, 0.f, 0.f);
+			  		 
+const Vector3 Vector3::AXIS_Y = Vector3(0.f, 1.f, 0.f);
+			  		 
+const Vector3 Vector3::AXIS_Z = Vector3(0.f, 0.f, 1.f);
+
 
 //\===================================================
 //\ Constructors
@@ -25,18 +35,14 @@ Vector3::Vector3(float a_x, float a_y, float a_z) :
 	
 }
 
-/*
-Vector3::Vector3(const Vector2& a_xy, float a_z) 
+
+Vector3::Vector3(const Vector2& a_v2, float a_z) :
+	x(a_v2.x), y(a_v2.y), z(a_z)
 {
 
 }
 
 
-Vector3::Vector3(const float* a_v3fp)
-{
-
-}
-*/
 
 //\===================================================
 //\ Destructor

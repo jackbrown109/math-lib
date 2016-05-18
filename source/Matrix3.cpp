@@ -2,6 +2,9 @@
 #include "mathLib.h"
 
 
+const Matrix3 Matrix3::ONE = Matrix3(1.f, 1.f, 1.f, 1.f, 1.f, 1.f, 1.f, 1.f, 1.f);
+const Matrix3 Matrix3::ZERO = Matrix3(0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f, 0.f);
+const Matrix3 Matrix3::IDENTITY = Matrix3(1.f, 0.f, 0.f, 0.f, 1.f, 0.f, 0.f, 0.f, 1.f);
 
 
 //\===================================================
@@ -43,7 +46,7 @@ Matrix3::Matrix3(Matrix3& a_m3) :
 //\===================================================
 Matrix3::~Matrix3()
 {
-
+	
 }
 //\===================================================
 //\ Casting Operators
@@ -78,9 +81,9 @@ void Matrix3::SetCol(int iCol, const Vector3 vCol)
 }
 void Matrix3::SetRow(int iRow, const Vector3& vRow)
 {
-	m[0][iRow] = vRow.x;
-	m[1][iRow] = vRow.y;
-	m[2][iRow] = vRow.z;
+	m[iRow][0] = vRow.x;
+	m[iRow][1] = vRow.y;
+	m[iRow][2] = vRow.z;
 }
 Vector3	Matrix3::GetCol(int iCol) const
 {
@@ -88,7 +91,7 @@ Vector3	Matrix3::GetCol(int iCol) const
 }
 Vector3 Matrix3::GetRow(int iRow) const
 {
-	return Vector3(m[0][iRow], m[1][iRow], m[2][iRow]);
+	return Vector3(m[iRow][0], m[iRow][1], m[iRow][2]);
 }
 void Matrix3::GetCol(int iCol, Vector3& vCol) const
 {
@@ -96,7 +99,7 @@ void Matrix3::GetCol(int iCol, Vector3& vCol) const
 }
 void Matrix3::GetRow(int iRow, Vector3& vRow) const
 {
-	vRow.Set(m[0][iRow], m[1][iRow], m[2][iRow]);
+	vRow.Set(m[iRow][0], m[iRow][1], m[iRow][2]);
 }
 //\===================================================
 //\ Equivalence Operators
@@ -203,7 +206,9 @@ const Vector3 Matrix3::operator * (const Vector3& a_v3) const
 }
 const Vector3 operator * (const Vector3& a_v3, const Matrix3& a_m3)
 {
-	return Vector3(a_m3 * a_v3);
+	return Vector3(a_v3.x * a_m3.m_11 + a_v3.y * a_m3.m_21 + a_v3.z * a_m3.m_31,
+				   a_v3.x * a_m3.m_12 + a_v3.y * a_m3.m_22 + a_v3.z * a_m3.m_32,
+				   a_v3.x * a_m3.m_13 + a_v3.y * a_m3.m_23 + a_v3.z * a_m3.m_33);
 }
 
 const Matrix3 Matrix3::operator * (const Matrix3& a_m3) const

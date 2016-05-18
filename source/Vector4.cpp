@@ -1,5 +1,15 @@
 #include "mathLib.h"
 
+const Vector4 Vector4::ONE = Vector4(1.f);
+					
+const Vector4 Vector4::ZERO = Vector4(0.f);
+					
+const Vector4 Vector4::AXIS_X = Vector4(1.f, 0.f, 0.f, 0.f);
+					
+const Vector4 Vector4::AXIS_Y = Vector4(0.f, 1.f, 0.f, 0.f);
+					
+const Vector4 Vector4::AXIS_Z = Vector4(0.f, 0.f, 1.f, 0.f);
+
 
 //\===================================================
 //\ Constructors
